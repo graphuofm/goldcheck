@@ -1,0 +1,10 @@
+{
+ "pairs": 88,
+ "deep_err_rate": 0.648,
+ "shallow_err_rate": 0.371,
+ "mcnemar": [
+  32,
+  8
+ ],
+ "p_one_sided": 0.0001
+}

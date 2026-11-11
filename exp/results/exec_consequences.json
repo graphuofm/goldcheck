@@ -1,0 +1,39 @@
+{
+ "n": 201,
+ "categories": {
+  "values-differ": 100,
+  "rowcount-differs": 48,
+  "identical-output": 40,
+  "t0-error": 1,
+  "shape-differs": 12
+ },
+ "plausible_rate": 0.935,
+ "plausible_by_depth": {
+  "0": [
+   137,
+   144
+  ],
+  "1": [
+   41,
+   46
+  ],
+  "2": [
+   10,
+   11
+  ]
+ },
+ "identical_by_depth": {
+  "0": [
+   34,
+   144
+  ],
+  "1": [
+   6,
+   46
+  ],
+  "2": [
+   0,
+   11
+  ]
+ }
+}

@@ -1,0 +1,2 @@
+{"model":"openai/gpt-oss-120b","tag":"gptoss120b","ids":"results/sar_local/ids_dev2024_eval300.txt","version":"dev_2024","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295512","node":"itiger01","start":"2026-11-06 18:35:34 CST"}
+{"model":"openai/gpt-oss-120b","tag":"gptoss120b","ids":"results/sar_local/ids_dev2024_eval300.txt","version":"dev_2024","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295564","node":"itiger01","start":"2026-11-06 19:40:11 CST"}

@@ -1,0 +1,103 @@
+{
+ "agreement": {
+  "mini_T0->mini_T1": {
+   "static": {
+    "flagged": 175,
+    "out_changed_flagged": 39,
+    "pct_flagged": 22.3,
+    "pct_unflagged": 15.5,
+    "lift": 1.44,
+    "recall_out": "39/89",
+    "recall_pct": 43.8
+   },
+   "run_once": {
+    "flagged": 40,
+    "out_changed_flagged": 8,
+    "pct_flagged": 20.0,
+    "pct_unflagged": 17.7,
+    "lift": 1.13,
+    "recall_out": "8/89",
+    "recall_pct": 9.0
+   },
+   "goldcheck_live": {
+    "flagged": 32,
+    "out_changed_flagged": 18,
+    "pct_flagged": 56.2,
+    "pct_unflagged": 15.2,
+    "lift": 3.69,
+    "recall_out": "18/89",
+    "recall_pct": 20.2
+   }
+  },
+  "mini_T1->mini_T2": {
+   "static": {
+    "flagged": 154,
+    "out_changed_flagged": 23,
+    "pct_flagged": 14.9,
+    "pct_unflagged": 15.1,
+    "lift": 0.99,
+    "recall_out": "23/75",
+    "recall_pct": 30.7
+   },
+   "run_once": {
+    "flagged": 38,
+    "out_changed_flagged": 9,
+    "pct_flagged": 23.7,
+    "pct_unflagged": 14.3,
+    "lift": 1.65,
+    "recall_out": "9/75",
+    "recall_pct": 12.0
+   },
+   "goldcheck_live": {
+    "flagged": 14,
+    "out_changed_flagged": 8,
+    "pct_flagged": 57.1,
+    "pct_unflagged": 13.8,
+    "lift": 4.13,
+    "recall_out": "8/75",
+    "recall_pct": 10.7
+   }
+  },
+  "dev_2024->dev_2025": {
+   "static": {
+    "flagged": 498,
+    "out_changed_flagged": 109,
+    "pct_flagged": 21.9,
+    "pct_unflagged": 13.8,
+    "lift": 1.59,
+    "recall_out": "109/252",
+    "recall_pct": 43.3
+   },
+   "run_once": {
+    "flagged": 157,
+    "out_changed_flagged": 27,
+    "pct_flagged": 17.2,
+    "pct_unflagged": 16.3,
+    "lift": 1.05,
+    "recall_out": "27/252",
+    "recall_pct": 10.7
+   },
+   "goldcheck_live": {
+    "flagged": 105,
+    "out_changed_flagged": 37,
+    "pct_flagged": 35.2,
+    "pct_unflagged": 15.0,
+    "lift": 2.34,
+    "recall_out": "37/252",
+    "recall_pct": 14.7
+   }
+  }
+ },
+ "random_edit": {
+  "attempted": 116,
+  "targeted_found": 77,
+  "random_found_within_1": 35,
+  "random_found_within_10": 52,
+  "random_found_within_100": 66,
+  "random_errors": 0,
+  "random_found_but_targeted_missed": 9,
+  "targeted_found_but_random_missed": 20,
+  "median_tries_when_found": 1,
+  "wall_secs": 52.1
+ }
+}

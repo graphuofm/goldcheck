@@ -1,0 +1,11 @@
+{
+ "cats": {
+  "text-same": 26,
+  "norm-equivalent": 5,
+  "output-equivalent": 49,
+  "output-differs": 20,
+  "exec-issue": 0
+ },
+ "official_claim": 48,
+ "exec_issues": []
+}

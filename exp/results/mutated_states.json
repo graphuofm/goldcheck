@@ -1,0 +1,3509 @@
+{
+"summary": {
+"mini": {
+"n_tested": 45,
+"n_all": 50,
+"any_exposed": 14,
+"duplicate": 4,
+"null": 6,
+"tie": 2,
+"date": 0,
+"delete": 10,
+"pct_any": 31.1
+},
+"dev_heldout": {
+"n_tested": 95,
+"n_all": 97,
+"any_exposed": 21,
+"duplicate": 4,
+"null": 8,
+"tie": 10,
+"date": 1,
+"delete": 8,
+"pct_any": 22.1
+},
+"control": {
+"n_tested": 99,
+"n_all": 103,
+"any_exposed": 0,
+"duplicate": 0,
+"null": 0,
+"tie": 0,
+"date": 0,
+"delete": 0,
+"pct_any": 0.0
+}
+},
+"rows": [
+{
+"qid": 1500,
+"db": "debit_card_specializing",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1501,
+"db": "debit_card_specializing",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1509,
+"db": "debit_card_specializing",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1323,
+"db": "student_club",
+"tag": "mini",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"attendance\" already exists"
+},
+{
+"qid": 1331,
+"db": "student_club",
+"tag": "mini",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"income\" already exists"
+},
+{
+"qid": 1362,
+"db": "student_club",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1392,
+"db": "student_club",
+"tag": "mini",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"income\" already exists"
+},
+{
+"qid": 1403,
+"db": "student_club",
+"tag": "mini",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"budget\" already exists"
+},
+{
+"qid": 1464,
+"db": "student_club",
+"tag": "mini",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"income\" already exists"
+},
+{
+"qid": 1156,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1164,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1171,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1175,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1189,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": true,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1209,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1239,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1257,
+"db": "thrombosis_prediction",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1039,
+"db": "european_football_2",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1040,
+"db": "european_football_2",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 862,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": true,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 877,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 898,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 940,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 954,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": true,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 962,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 972,
+"db": "formula_1",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 761,
+"db": "superhero",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 786,
+"db": "superhero",
+"tag": "mini",
+"exposed": {
+"duplicate": true,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 571,
+"db": "codebase_community",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 633,
+"db": "codebase_community",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 397,
+"db": "card_games",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 473,
+"db": "card_games",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 530,
+"db": "card_games",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 213,
+"db": "toxicology",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 219,
+"db": "toxicology",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 242,
+"db": "toxicology",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 244,
+"db": "toxicology",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 255,
+"db": "toxicology",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 5,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 12,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 17,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 25,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 31,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 40,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 46,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 82,
+"db": "california_schools",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 92,
+"db": "financial",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 95,
+"db": "financial",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 112,
+"db": "financial",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 149,
+"db": "financial",
+"tag": "mini",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 35,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 43,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 51,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 71,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 80,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 84,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 88,
+"db": "california_schools",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 91,
+"db": "financial",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 108,
+"db": "financial",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 133,
+"db": "financial",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 141,
+"db": "financial",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 179,
+"db": "financial",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 250,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 272,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 277,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 280,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 328,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 329,
+"db": "toxicology",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 350,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 351,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 357,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 359,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 365,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 396,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 403,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 430,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 435,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 436,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 499,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 501,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 513,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 516,
+"db": "card_games",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 543,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 546,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 554,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 559,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 561,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 590,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 591,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 606,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 622,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 641,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": true,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 652,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 658,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 668,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 695,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 715,
+"db": "codebase_community",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 832,
+"db": "superhero",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 856,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 890,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 926,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 939,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 958,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 984,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 998,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 999,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1009,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1019,
+"db": "formula_1",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1026,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1047,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1055,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1066,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1069,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {},
+"base_ok": false,
+"baseline_equal": null,
+"err": "table \"Player\" already exists"
+},
+{
+"qid": 1083,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": true,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1095,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1109,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1112,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1128,
+"db": "european_football_2",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": false,
+"baseline_equal": false
+},
+{
+"qid": 1170,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1173,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1178,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1180,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1181,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1183,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1200,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1228,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1244,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1253,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1266,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1276,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1292,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1293,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1294,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1296,
+"db": "thrombosis_prediction",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1332,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1335,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1358,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": true,
+"date": true,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1363,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1367,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": true,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1384,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": true,
+"null": true,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1406,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1407,
+"db": "student_club",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": true,
+"null": true,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1474,
+"db": "debit_card_specializing",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1504,
+"db": "debit_card_specializing",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1511,
+"db": "debit_card_specializing",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": true
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1512,
+"db": "debit_card_specializing",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1513,
+"db": "debit_card_specializing",
+"tag": "dev_heldout",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 22,
+"db": "california_schools",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 37,
+"db": "california_schools",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 52,
+"db": "california_schools",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 86,
+"db": "california_schools",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 93,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 128,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 131,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 142,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 163,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 165,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 192,
+"db": "financial",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 214,
+"db": "toxicology",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 221,
+"db": "toxicology",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": false,
+"baseline_equal": false
+},
+{
+"qid": 233,
+"db": "toxicology",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 235,
+"db": "toxicology",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 300,
+"db": "toxicology",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 344,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 354,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 358,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 367,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 374,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 382,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 410,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 452,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 484,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 490,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 506,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 527,
+"db": "card_games",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 533,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 538,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 555,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 558,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 560,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 573,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 614,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 616,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 660,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 662,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 666,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 691,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 712,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 714,
+"db": "codebase_community",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 732,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 733,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 737,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 743,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 747,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 749,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 751,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 755,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 756,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 773,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 799,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 802,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 826,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 831,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 836,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 837,
+"db": "superhero",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 847,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 875,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 877,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 901,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 917,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 923,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 945,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 960,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 985,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1018,
+"db": "formula_1",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1042,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1053,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1089,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1108,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": false,
+"baseline_equal": false
+},
+{
+"qid": 1137,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1142,
+"db": "european_football_2",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1155,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1159,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1165,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1182,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1192,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1193,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1220,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1226,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1236,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1277,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1291,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1297,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1302,
+"db": "thrombosis_prediction",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1318,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1337,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1359,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1362,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1364,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1369,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1378,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1381,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1387,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1395,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": false,
+"baseline_equal": false
+},
+{
+"qid": 1412,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1452,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1462,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1467,
+"db": "student_club",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+},
+{
+"qid": 1479,
+"db": "debit_card_specializing",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": false,
+"baseline_equal": false
+},
+{
+"qid": 1520,
+"db": "debit_card_specializing",
+"tag": "control",
+"exposed": {
+"duplicate": false,
+"null": false,
+"tie": false,
+"date": false,
+"delete": false
+},
+"base_ok": true,
+"baseline_equal": true
+}
+]
+}

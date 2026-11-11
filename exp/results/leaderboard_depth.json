@@ -1,0 +1,184 @@
+{
+ "agents": {
+  "Alpha-SQL": {
+   "old_total": 83,
+   "new_total": 86
+  },
+  "CodeS": {
+   "old_total": 58,
+   "new_total": 55
+  },
+  "Contextual-SQL": {
+   "old_total": 70,
+   "new_total": 72
+  },
+  "DAIL-SQL": {
+   "old_total": 68,
+   "new_total": 73
+  },
+  "DIN-SQL": {
+   "old_total": 77,
+   "new_total": 75
+  },
+  "DTS-SQL": {
+   "old_total": 60,
+   "new_total": 60
+  },
+  "E-SQL": {
+   "old_total": 81,
+   "new_total": 80
+  },
+  "GSR": {
+   "old_total": 80,
+   "new_total": 71
+  },
+  "GenaSQL": {
+   "old_total": 83,
+   "new_total": 83
+  },
+  "MAC-SQL": {
+   "old_total": 79,
+   "new_total": 78
+  },
+  "OmniSQL": {
+   "old_total": 73,
+   "new_total": 76
+  },
+  "OpenSearch-SQL": {
+   "old_total": 73,
+   "new_total": 71
+  },
+  "RSL-SQL": {
+   "old_total": 81,
+   "new_total": 80
+  },
+  "TA-SQL": {
+   "old_total": 76,
+   "new_total": 74
+  },
+  "csc_sql": {
+   "old_total": 72,
+   "new_total": 77
+  }
+ },
+ "不嵌套": {
+  "n_questions": 62,
+  "mean_rank_move": 1.33,
+  "max_rank_move": 7,
+  "kendall_tau": 0.714,
+  "scores_old": {
+   "Alpha-SQL": 52,
+   "CodeS": 37,
+   "Contextual-SQL": 44,
+   "DAIL-SQL": 45,
+   "DIN-SQL": 48,
+   "DTS-SQL": 36,
+   "E-SQL": 51,
+   "GSR": 49,
+   "GenaSQL": 51,
+   "MAC-SQL": 50,
+   "OmniSQL": 43,
+   "OpenSearch-SQL": 49,
+   "RSL-SQL": 50,
+   "TA-SQL": 48,
+   "csc_sql": 43
+  },
+  "scores_new": {
+   "Alpha-SQL": 54,
+   "CodeS": 39,
+   "Contextual-SQL": 46,
+   "DAIL-SQL": 46,
+   "DIN-SQL": 47,
+   "DTS-SQL": 39,
+   "E-SQL": 53,
+   "GSR": 46,
+   "GenaSQL": 52,
+   "MAC-SQL": 49,
+   "OmniSQL": 47,
+   "OpenSearch-SQL": 48,
+   "RSL-SQL": 51,
+   "TA-SQL": 49,
+   "csc_sql": 47
+  }
+ },
+ "一层嵌套": {
+  "n_questions": 34,
+  "mean_rank_move": 2.0,
+  "max_rank_move": 9,
+  "kendall_tau": 0.562,
+  "scores_old": {
+   "Alpha-SQL": 28,
+   "CodeS": 19,
+   "Contextual-SQL": 24,
+   "DAIL-SQL": 20,
+   "DIN-SQL": 25,
+   "DTS-SQL": 21,
+   "E-SQL": 26,
+   "GSR": 27,
+   "GenaSQL": 28,
+   "MAC-SQL": 26,
+   "OmniSQL": 27,
+   "OpenSearch-SQL": 21,
+   "RSL-SQL": 27,
+   "TA-SQL": 26,
+   "csc_sql": 25
+  },
+  "scores_new": {
+   "Alpha-SQL": 29,
+   "CodeS": 15,
+   "Contextual-SQL": 25,
+   "DAIL-SQL": 25,
+   "DIN-SQL": 25,
+   "DTS-SQL": 19,
+   "E-SQL": 26,
+   "GSR": 23,
+   "GenaSQL": 28,
+   "MAC-SQL": 26,
+   "OmniSQL": 27,
+   "OpenSearch-SQL": 22,
+   "RSL-SQL": 27,
+   "TA-SQL": 24,
+   "csc_sql": 28
+  }
+ },
+ "两层以上": {
+  "n_questions": 4,
+  "mean_rank_move": 3.47,
+  "max_rank_move": 11,
+  "kendall_tau": 0.39,
+  "scores_old": {
+   "Alpha-SQL": 3,
+   "CodeS": 2,
+   "Contextual-SQL": 2,
+   "DAIL-SQL": 3,
+   "DIN-SQL": 4,
+   "DTS-SQL": 3,
+   "E-SQL": 4,
+   "GSR": 4,
+   "GenaSQL": 4,
+   "MAC-SQL": 3,
+   "OmniSQL": 3,
+   "OpenSearch-SQL": 3,
+   "RSL-SQL": 4,
+   "TA-SQL": 2,
+   "csc_sql": 4
+  },
+  "scores_new": {
+   "Alpha-SQL": 3,
+   "CodeS": 1,
+   "Contextual-SQL": 1,
+   "DAIL-SQL": 2,
+   "DIN-SQL": 3,
+   "DTS-SQL": 2,
+   "E-SQL": 1,
+   "GSR": 2,
+   "GenaSQL": 3,
+   "MAC-SQL": 3,
+   "OmniSQL": 2,
+   "OpenSearch-SQL": 1,
+   "RSL-SQL": 2,
+   "TA-SQL": 1,
+   "csc_sql": 2
+  }
+ }
+}

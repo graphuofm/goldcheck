@@ -1,0 +1,135 @@
+Sat Nov  7 22:02:13 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:46:00.0 Off |                    0 |
+| N/A   38C    P0             74W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          Off |   00000000:AF:00.0 Off |                    0 |
+| N/A   60C    P0            473W /  700W |   78610MiB /  81559MiB |     97%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    1   N/A  N/A   1798445      C   VLLM::EngineCore                            78600MiB |
++-----------------------------------------------------------------------------------------+
+[2026-11-07 22:02:14 CST] openai/gpt-oss-120b（gptoss120b_hint，dev_2024，results/sar_local/ids_dev2024_live105.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-07 22:02:14 CST] vllm serve openai/gpt-oss-120b --port 59015 --served-model-name gptoss120b_hint --max-model-len 32768 --gpu-memory-utilization 0.95 --safetensors-load-strategy eager（节点 itiger01，GPU 0）
+[2026-11-07 22:04:04 CST] vLLM 就绪（等了 110 秒），开始客户端
++ SAR_BACKEND=openai OPENAI_URL=http://127.0.0.1:59015/v1 python3 34_sar_local.py --model gptoss120b_hint --version dev_2024 --ids results/sar_local/ids_dev2024_live105.txt --out results/sar_local/gptoss120b_hint_dev_2024_ids_dev2024_live105.jsonl --workers 16 --tag gptoss120b_hint
+383 no no 1 11.2
+269 no no 1 14.4
+317 no no 1 14.6
+80 no yes 1 15.1
+30 yes yes 1 15.5
+81 no yes 1 16.0
+68 no yes 1 17.7
+371 no no 1 18.9
+298 no yes 1 19.5
+82 no yes 1 19.6
+37 no no 1 20.8
+150 no no 1 22.9
+386 no no 1 16.5
+101 no no 2 29.8
+352 no yes 1 30.3
+517 no no 1 15.8
+416 no yes 1 19.7
+417 no no 1 20.7
+515 no no 1 20.2
+94 no yes 1 36.6
+476 no no 1 21.6
+520 no yes 1 20.9
+567 yes no 1 20.5
+631 no no 1 18.1
+610 no no 1 20.8
+569 yes yes 1 22.5
+571 no yes 1 23.7
+632 no no 1 18.0
+342 no no 3 47.4
+671 no yes 1 12.6
+633 no no 1 18.3
+672 no yes 1 12.6
+677 yes no 1 12.1
+635 no no 1 21.0
+689 no no 1 13.6
+639 no no 1 21.6
+736 no yes 1 11.6
+716 no no 1 14.0
+668 no yes 1 21.9
+693 no yes 1 17.0
+802 no yes 1 10.7
+701 yes no 1 17.6
+683 no yes 1 24.3
+810 no yes 1 13.5
+766 no yes 2 18.0
+794 no yes 1 18.8
+913 no yes 1 14.7
+936 no yes 1 13.6
+1008 yes no 1 9.3
+847 no yes 1 19.6
+906 no no 1 20.7
+832 no yes 4 21.8
+938 no no 1 17.0
+908 no no 1 23.3
+1002 no no 1 21.4
+1024 no yes 1 21.4
+1117 no yes 1 16.8
+1026 no yes 1 24.9
+1028 no yes 1 22.4
+944 no yes 1 34.0
+1176 yes no 1 20.5
+1203 no no 1 18.5
+1196 no yes 1 24.6
+1222 no no 1 13.9
+1027 no yes 2 37.9
+1245 yes no 1 16.7
+1252 no no 1 14.7
+943 no yes 2 46.0
+1167 no yes 1 37.0
+1168 no yes 1 36.1
+1218 no yes 1 28.6
+1009 no yes 3 48.6
+1278 no no 1 14.3
+1148 no yes 2 40.7
+1254 no no 1 21.0
+1253 no yes 1 24.8
+1280 no no 1 16.8
+1256 no no 2 23.9
+1286 no no 1 14.3
+1283 no no 1 15.1
+1282 no yes 1 16.9
+1279 no no 1 21.2
+1090 no yes 3 49.8
+1287 no no 1 15.5
+1289 no no 1 13.9
+1295 no yes 1 13.9
+1298 no no 1 14.2
+1290 no yes 1 19.0
+1291 no no 2 18.2
+1305 no no 1 13.1
+1306 no no 1 12.5
+1315 yes no 1 12.6
+1365 no no 1 12.3
+1302 no no 1 18.2
+1317 yes no 1 13.5
+1297 no no 2 22.4
+1304 no no 2 19.3
+1308 no yes 1 16.6
+1504 no no 1 8.4
+1388 no yes 1 16.1
+1389 no yes 1 15.3
+1517 no yes 1 10.0
+1407 no yes 2 15.1
+1318 no yes 2 20.2
+1490 no yes 2 17.2
+[2026-11-07 22:06:23 CST] 客户端结束，退出码 0
+[2026-11-07 22:06:28 CST] 完成 105 行，报错 0；退出码 0

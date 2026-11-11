@@ -1,0 +1,85 @@
+{
+ "raters": [
+  "Jiacheng Ding",
+  "Cong Guo"
+ ],
+ "n_both": 37,
+ "missing": [],
+ "counts": {
+  "Jiacheng Ding": {
+   "标准答案错": 30,
+   "标准答案对": 7
+  },
+  "Cong Guo": {
+   "标准答案错": 32,
+   "标准答案对": 5
+  }
+ },
+ "agreement": 0.892,
+ "kappa_4": 0.604,
+ "kappa_error": 0.604,
+ "by_class": {
+  "第一名是空值": {
+   "n": 5,
+   "agree": 5,
+   "both_error": 5,
+   "both_ok": 0
+  },
+  "连表后重复计数": {
+   "n": 32,
+   "agree": 28,
+   "both_error": 24,
+   "both_ok": 4
+  }
+ },
+ "disagreements": [
+  {
+   "qid": 520,
+   "class": "连表后重复计数",
+   "rater1": [
+    "标准答案错",
+    null
+   ],
+   "rater2": [
+    "标准答案对",
+    null
+   ]
+  },
+  {
+   "qid": 701,
+   "class": "连表后重复计数",
+   "rater1": [
+    "标准答案对",
+    null
+   ],
+   "rater2": [
+    "标准答案错",
+    null
+   ]
+  },
+  {
+   "qid": 1148,
+   "class": "连表后重复计数",
+   "rater1": [
+    "标准答案对",
+    null
+   ],
+   "rater2": [
+    "标准答案错",
+    null
+   ]
+  },
+  {
+   "qid": 1490,
+   "class": "连表后重复计数",
+   "rater1": [
+    "标准答案对",
+    null
+   ],
+   "rater2": [
+    "标准答案错",
+    null
+   ]
+  }
+ ]
+}

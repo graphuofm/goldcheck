@@ -1,0 +1,91 @@
+Fri Nov  6 21:06:09 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:CF:00.0 Off |                    0 |
+| N/A   35C    P0             74W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2026-11-06 21:06:09 CST] Qwen/Qwen2.5-Coder-32B-Instruct（qwen32b，dev_2025，results/sar_local/ids_dev2025_findings65.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-06 21:06:09 CST] vllm serve Qwen/Qwen2.5-Coder-32B-Instruct --port 58661 --served-model-name qwen32b --max-model-len 32768 --gpu-memory-utilization 0.95 --safetensors-load-strategy eager（节点 itiger01，GPU 0）
+[2026-11-06 21:07:39 CST] vLLM 就绪（等了 90 秒），开始客户端
++ SAR_BACKEND=openai OPENAI_URL=http://127.0.0.1:58661/v1 python3 34_sar_local.py --model qwen32b --version dev_2025 --ids results/sar_local/ids_dev2025_findings65.txt --out results/sar_local/qwen32b_dev_2025_ids_dev2025_findings65.jsonl --workers 16 --tag qwen32b
+81 yes no 3 25.7
+371 yes no 3 30.6
+82 no yes 4 34.8
+37 yes no 4 39.1
+567 yes no 3 41.5
+150 no no 4 49.5
+269 no no 4 50.1
+30 no no 4 52.9
+363 yes no 4 58.3
+632 no no 3 33.3
+352 yes no 4 66.7
+309 no yes 6 67.6
+672 no no 3 31.7
+520 no yes 4 74.0
+569 yes no 5 51.0
+766 yes no 3 29.7
+906 yes no 3 26.3
+386 no no 4 98.1
+802 no no 4 44.2
+847 yes no 5 44.4
+936 no no 4 44.4
+944 no yes 2 36.2
+943 no yes 4 43.5
+94 no yes 6 119.8
+633 yes no 5 94.4
+1117 yes no 2 24.1
+1009 no no 3 39.3
+1002 yes no 5 61.8
+677 yes no 9 121.2
+689 no no 8 114.6
+701 yes yes 3 119.1
+1196 no no 3 45.5
+1176 no no 4 55.0
+1203 no no 3 46.5
+1218 yes no 4 54.6
+1245 no no 3 48.3
+1135 yes no 5 84.2
+1167 no yes 5 92.1
+1280 yes no 3 44.7
+1252 no no 3 52.7
+1008 no yes 7 128.5
+938 no yes 11 165.3
+1284 no yes 3 62.5
+1148 yes no 6 125.0
+1290 no yes 4 71.6
+1291 no no 4 81.9
+1302 no no 4 74.0
+1279 yes no 5 110.6
+1305 yes no 5 77.8
+1389 no no 3 42.2
+1306 yes no 5 79.7
+1297 no yes 5 101.2
+1315 no no 5 74.0
+1365 no yes 4 58.5
+1318 no no 4 67.6
+1388 no yes 3 68.8
+1295 yes no 6 114.7
+1517 yes yes 4 33.2
+1504 no no 5 49.6
+1308 no no 6 109.5
+1490 yes no 4 56.2
+1391 yes no 7 89.1
+298 None None 30 615.7
+1090 None None 30 528.1
+417 yes no 9 670.0
+[2026-11-06 21:18:49 CST] 客户端结束，退出码 0
+[2026-11-06 21:18:54 CST] 完成 65 行，报错 0；退出码 0

@@ -1,0 +1,15 @@
+{
+ "spider_depth_dist": {
+  "1": 9,
+  "2": 74,
+  "3": 38
+ },
+ "n": 121,
+ "bird_rates": {
+  "1": 0.351,
+  "2": 0.605,
+  "3": 0.917
+ },
+ "predicted_error": 0.684,
+ "reported_error": 0.628
+}

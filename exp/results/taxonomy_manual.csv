@@ -1,0 +1,135 @@
+qid,E,mechanism,note
+1509,E2,date-format,年份字符串比较改为DATE比较
+1524,E1,wrong-column+wrong-join,问segment返回country且join错表
+1529,E2,price-times-amount,花费=数量×单价的schema语义
+1531,E2,price-times-amount,均价分子同类
+1323,E2,wrong-filter-source,fundraiser判断来源错并缺DISTINCT
+1331,E2,missing-aggregation,单行amount未SUM
+1339,E2,wrong-grain,AVG按支出行而非按事件
+1362,E2,missing-DISTINCT,城市计数未去重
+1376,E2,wrong-grain,比率按预算行排序而非按事件聚合
+1378,E2,wrong-grain,MAX按行而非按事件SUM 修复加子查询
+1389,E2,wrong-grain,最高成本按行排序而非按事件聚合
+1392,E1,wrong-order-key,按source名称排序而非按SUM金额
+1403,E2,wrong-grain,超支最多按行而非按事件SUM
+1404,E1,missing-filter,漏掉approved条件
+1422,E2,wrong-column-source,category取自budget应取event.type
+1464,E2,wrong-join-path,绕道event/attendance应Income直连Member
+1155,E3,boundary,正常范围边界>改>=
+1156,E3,age-arithmetic,年龄年差改生日修正CASE
+1162,E2,wrong-column,日期取Description应取First Date
+1164,E2,missing-DISTINCT,join后按患者去重
+1166,E2,argmax-ties,LIMIT1改子查询MAX 并列未处理
+1168,E3,age-arithmetic,同模板
+1171,E3,age-arithmetic,同模板
+1175,E3,age-arithmetic,同模板
+1189,E2,missing-DISTINCT,按检查行计数应按患者
+1209,E3,boundary,正常范围>改>=并重构IN子查询
+1225,E4,output-order,仅输出列顺序
+1227,E3,age-arithmetic,同模板
+1229,E3,age-arithmetic,改date加50年
+1232,E3,age-arithmetic,同模板
+1235,E3,age-arithmetic,同模板
+1239,E3,age-arithmetic,同模板
+1242,E3,age-arithmetic,below50同模板
+1243,E3,age-arithmetic,同前缀模板
+1254,E3,boundary,BETWEEN含界改开区间
+1257,E3,age-arithmetic,改date加70年
+1267,E2,existence-negation,无thrombosis需NOT EXISTS 修复加深
+1270,E2,existence-negation,无症状需NOT EXISTS 修复加深
+1028,E2,argmax-ties,胜场GROUP BY加HAVING等于MAX
+1029,E2,latest-per-entity,最新记录需窗口函数 修复加深
+1031,E3,age-arithmetic,DATETIME误用加生日修正
+1032,E2,argmax-ties,HAVING等于MAX处理并列
+1039,E2,avg-denominator,SUM除COUNT改AVG
+1040,E2,wrong-group-key,分组键id应player_api_id
+1068,E2,avg-denominator,同1039
+1094,E2,latest-per-entity,latest records需CTE取最新 修复加深
+1115,E1,misread-question,百分比基数应为比较对象
+846,E3,domain-rule,F1淘汰规则q2 IS NULL 原硬编码LIMIT5
+862,E2,completion-criterion,完赛判定需join status表
+877,E2,completion-criterion,同上
+880,E2,scalar-via-sum,单值用SUM应MAX取值
+881,E3,domain-rule,完赛含加圈的领域规则
+892,E2,wrong-source-table,standings累计误当results单场
+896,E2,wrong-source-table,driverStandings应results
+898,E3,age-arithmetic,模板扩展到formula_1
+906,E2,wrong-source-table,首场积分取错表
+928,E2,rank-vs-position,rank是最快圈排名非名次
+930,E2,rank-vs-position,同上
+937,E2,rank-vs-position,rank=2改position=2
+940,E2,completion-criterion,补status join
+944,E2,completion-criterion,CTE内补status join
+950,E2,wrong-source-table,constructorStandings累计vs Results单场
+951,E2,wrong-source-table,同上
+954,E3,domain-rule,完赛等于status Finished
+955,E2,overcomplicated-parse,字符串解析应用milliseconds列 修复变浅
+962,E1,wrong-unit,问race results比例误按driver去重
+963,E2,string-parsing,时间串SUBSTR位置差一
+972,E2,missing-DISTINCT,加DISTINCT
+1011,E2,overcomplicated-parse,怪兽CTE解析应用milliseconds 修复变浅
+726,E4,output-format,多余列与RANK窗口
+736,E2,argmax-ties,疑LIMIT1并列
+743,E3,domain-rule,自利与道德准则=Neutral阵营非Bad
+744,E1,incomplete-output,题问出版社加差值原只回差值
+747,E2,missing-value-encoding,缺失编码为减号
+750,E2,missing-value-encoding,体重0=缺失需过滤
+761,E2,missing-value-encoding,AVG基数需weight大于0
+766,E2,missing-DISTINCT,加distinct
+773,E2,missing-rows-left-join,INNER吞掉无publisher的行
+786,E2,missing-DISTINCT,英雄计数去重
+791,E2,missing-value-encoding,height 0=缺失
+794,E2,argmax-ties,疑并列
+829,E1,incomplete-output,同743号模板
+587,E1,aggregate-scope,overall平均误算成分组内 修复加子查询
+633,E2,wrong-source-table,postHistory编辑史非作者
+637,E2,wrong-source-table,同上
+639,E2,wrong-source-table,同上
+640,E2,wrong-source-table,同上
+671,E2,argmax-ties,first badge需MIN日期含并列
+672,E2,value-matching,Location需LIKE模糊匹配
+682,E2,wrong-column,用户创建日误当帖子日期
+683,E1,aggregate-scope,百分比分母应全体posts 修复加子查询
+694,E2,wrong-join-path,评论者姓名非帖主并LEFT JOIN
+347,E2,missing-rows-left-join,无ruling的卡也要列出
+349,E2,argmax-ties,HAVING等于MAX
+356,E2,missing-value-encoding,无穷编码为无穷符号非星号
+366,E1,misread-question,rule指卡牌text非legalities
+397,E2,multivalue-encoding,availability多值需双LIKE
+402,E1,negation-flip,无文本框=isTextless=1
+212,E2,argmax-ties,least numerous并列
+213,E2,missing-DISTINCT,键类型去重
+219,E1,aggregate-scope,百分比分子分母作用域 修复加深
+242,E2,string-parsing,atom_id取位对短id失效
+244,E2,argmax-ties,CTE重构含并列
+255,E2,cosmetic-only,仅INNER JOIN写法变化
+260,E1,conjunction-scope,两条件需双IN子查询 修复加深
+281,E1,misread-question,tally=计数原只列DISTINCT
+5,E2,wrong-key-count,按校名去重应按CDSCode
+11,E2,null-guard,School is not NULL 库内模板
+12,E2,null-guard,rtype=S加分母守卫
+17,E2,null-guard,rtype=S
+23,E2,null-guard,School not NULL
+24,E2,null-guard,rtype=S
+25,E2,wrong-column-source,District与FundingType取错表
+26,E2,null-guard,School not NULL
+31,E2,null-guard,frpm含非学校行需过滤
+36,E2,null-guard,疑同类
+37,E2,null-guard,比率未定义需NumTstTakr守卫
+40,E2,null-guard,rtype=S
+41,E2,wrong-column-source,分区键county取错表
+46,E2,null-guard,school is not null
+48,E1,missing-filter,漏掉Orange County条件
+50,E2,null-guard,satscores混学区行需rtype过滤
+72,E2,null-guard,school not NULL
+82,E2,null-guard,school is not null
+83,E2,wrong-column,Multiple Provision在NSLP列非Magnet
+92,E1,boundary,题面strict不等式原BETWEEN含界
+95,E2,argmax-ties,最年轻加薪资tie-break
+112,E2,wrong-join-path,client区非account区需经disp与account
+125,E3,domain-rule,还款中欠债=status码语义
+129,E2,value-encoding,取款非卡=交易类型编码
+145,E1,misread-question,holder=client_id非account_id
+149,E2,missing-DISTINCT,类型去重
+186,E2,missing-DISTINCT,按client去重的百分比
+194,E3,age-arithmetic,模板再现financial库

@@ -1,0 +1,102 @@
+{
+ "mini": {
+  "n": 201,
+  "outcomes": {
+   "same shape, different values": 96,
+   "identical set, different multiplicity": 7,
+   "identical rows": 43,
+   "old query fails": 1,
+   "different row count": 42,
+   "different columns": 12
+  },
+  "plausible": 188,
+  "plausible_pct": 93.5
+ },
+ "dev_heldout": {
+  "n": 273,
+  "outcomes": {
+   "different columns": 82,
+   "same shape, different values": 58,
+   "identical rows": 85,
+   "different row count": 34,
+   "identical set, different multiplicity": 12,
+   "new query fails": 2
+  },
+  "plausible": 188,
+  "plausible_pct": 68.9
+ },
+ "lints_output_changed_heldout": {
+  "limit_order": {
+   "n": 192,
+   "on": 21.9,
+   "off": 15.6
+  },
+  "count_nodistinct_join": {
+   "n": 157,
+   "on": 25.5,
+   "off": 15.2
+  },
+  "year_subtract": {
+   "n": 8,
+   "on": 25.0,
+   "off": 16.7
+  },
+  "superlative_flat": {
+   "n": 156,
+   "on": 23.7,
+   "off": 15.6
+  },
+  "division": {
+   "n": 69,
+   "on": 24.6,
+   "off": 16.2
+  },
+  "order_no_nullguard": {
+   "n": 169,
+   "on": 23.1,
+   "off": 15.6
+  }
+ },
+ "lints_output_excl_two_schemas": {
+  "limit_order": {
+   "n": 154,
+   "on": 17.5,
+   "off": 10.6
+  },
+  "count_nodistinct_join": {
+   "n": 126,
+   "on": 15.9,
+   "off": 11.1
+  },
+  "year_subtract": {
+   "n": 8,
+   "on": 25.0,
+   "off": 11.6
+  },
+  "superlative_flat": {
+   "n": 121,
+   "on": 19.0,
+   "off": 10.6
+  },
+  "division": {
+   "n": 60,
+   "on": 20.0,
+   "off": 11.2
+  },
+  "order_no_nullguard": {
+   "n": 136,
+   "on": 17.6,
+   "off": 10.7
+  }
+ },
+ "per_db_spearman_mini_vs_dev": {
+  "rho": 0.69,
+  "p": 0.019
+ },
+ "subset_churn": {
+  "nested_new": 230,
+  "nested_new_flat_before": 114,
+  "nested_old": 124,
+  "nested_old_flat_now": 8
+ }
+}

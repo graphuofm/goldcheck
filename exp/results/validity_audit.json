@@ -1,0 +1,270 @@
+{
+ "A_error_definition": {
+  "n": 498,
+  "any": 201,
+  "reverted_to_T0": 0,
+  "round2_flag_but_T1_eq_T2_after_normalising": 0,
+  "round2_unflagged_but_text_differs": 0,
+  "reverted_qids": [],
+  "cosmetic_round2_qids": []
+ },
+ "B_headline": {
+  "n": [
+   410,
+   76,
+   12
+  ],
+  "k": [
+   144,
+   46,
+   11
+  ],
+  "rate": [
+   35.1,
+   60.5,
+   91.7
+  ],
+  "z": 5.53,
+  "p": 1.64e-08
+ },
+ "B_diagonal_only": {
+  "n": [
+   405,
+   51,
+   5
+  ],
+  "k": [
+   139,
+   21,
+   4
+  ],
+  "rate": [
+   34.3,
+   41.2,
+   80.0
+  ],
+  "z": 1.92,
+  "p": 0.0273
+ },
+ "B_offdiag": {
+  "n": 37,
+  "err": 37,
+  "shallower": 32,
+  "deeper": 5
+ },
+ "C_irreducible": {
+  "n": [
+   422,
+   68,
+   8
+  ],
+  "k": [
+   147,
+   47,
+   7
+  ],
+  "rate": [
+   34.8,
+   69.1,
+   87.5
+  ],
+  "z": 5.96,
+  "p": 1.25e-09
+ },
+ "C_agg_chain": {
+  "n": [
+   233,
+   237,
+   28
+  ],
+  "k": [
+   71,
+   106,
+   24
+  ],
+  "rate": [
+   30.5,
+   44.7,
+   85.7
+  ],
+  "z": 5.48,
+  "p": 2.11e-08
+ },
+ "C_irreducible_diag": {
+  "n": [
+   416,
+   41,
+   4
+  ],
+  "k": [
+   141,
+   20,
+   3
+  ],
+  "rate": [
+   33.9,
+   48.8,
+   75.0
+  ],
+  "z": 2.49,
+  "p": 0.00644
+ },
+ "C_feature_counts": {
+  "cte": 13,
+  "union": 2,
+  "window": 5,
+  "demand_nest": 88,
+  "demand_nest_but_reducible": 12
+ },
+ "D_plain": {
+  "depth": {
+   "OR": 2.81,
+   "p": 5e-06
+  },
+  "tables": {
+   "OR": 1.3,
+   "p": 0.058
+  },
+  "qlen10": {
+   "OR": 1.85,
+   "p": 0.0003
+  },
+  "elen10": {
+   "OR": 1.14,
+   "p": 0.22
+  }
+ },
+ "D_cluster_robust": {
+  "depth": {
+   "OR": 2.81,
+   "p": 8.7e-06
+  },
+  "tables": {
+   "OR": 1.3,
+   "p": 0.21
+  },
+  "qlen10": {
+   "OR": 1.85,
+   "p": 0.00029
+  },
+  "elen10": {
+   "OR": 1.14,
+   "p": 0.39
+  }
+ },
+ "D_db_fixed_effects_cluster": {
+  "depth": {
+   "OR": 3.06,
+   "p": 5.3e-05
+  },
+  "tables": {
+   "OR": 1.55,
+   "p": 0.078
+  },
+  "qlen10": {
+   "OR": 1.34,
+   "p": 0.33
+  },
+  "elen10": {
+   "OR": 1.13,
+   "p": 0.41
+  }
+ },
+ "D_aic_primary": {
+  "depth": 645.1,
+  "irreducible depth": 639.7,
+  "tables": 664.0,
+  "joins": 669.8,
+  "select blocks": 642.8,
+  "question length": 651.5,
+  "evidence length": 667.3,
+  "intercept only": 673.8
+ },
+ "D_loo_primary_z": {
+  "california_schools": 5.51,
+  "card_games": 5.43,
+  "codebase_community": 5.53,
+  "debit_card_specializing": 5.18,
+  "european_football_2": 5.14,
+  "financial": 5.44,
+  "formula_1": 5.61,
+  "student_club": 4.94,
+  "superhero": 4.7,
+  "thrombosis_prediction": 5.22,
+  "toxicology": 5.31
+ },
+ "D_cmh": {
+  "chi2": 28.43,
+  "z": 5.33,
+  "p_one_sided": 4.9e-08,
+  "dbs_with_positive_gap": 11
+ },
+ "D_per_db_primary": {
+  "california_schools": {
+   "nested_n": 4,
+   "nested_err": 4,
+   "flat_n": 26,
+   "flat_err": 16
+  },
+  "card_games": {
+   "nested_n": 7,
+   "nested_err": 3,
+   "flat_n": 45,
+   "flat_err": 14
+  },
+  "codebase_community": {
+   "nested_n": 9,
+   "nested_err": 4,
+   "flat_n": 40,
+   "flat_err": 13
+  },
+  "debit_card_specializing": {
+   "nested_n": 4,
+   "nested_err": 4,
+   "flat_n": 26,
+   "flat_err": 9
+  },
+  "european_football_2": {
+   "nested_n": 12,
+   "nested_err": 7,
+   "flat_n": 39,
+   "flat_err": 10
+  },
+  "financial": {
+   "nested_n": 5,
+   "nested_err": 3,
+   "flat_n": 25,
+   "flat_err": 9
+  },
+  "formula_1": {
+   "nested_n": 8,
+   "nested_err": 3,
+   "flat_n": 58,
+   "flat_err": 21
+  },
+  "student_club": {
+   "nested_n": 5,
+   "nested_err": 4,
+   "flat_n": 43,
+   "flat_err": 11
+  },
+  "superhero": {
+   "nested_n": 11,
+   "nested_err": 8,
+   "flat_n": 41,
+   "flat_err": 7
+  },
+  "thrombosis_prediction": {
+   "nested_n": 9,
+   "nested_err": 9,
+   "flat_n": 41,
+   "flat_err": 25
+  },
+  "toxicology": {
+   "nested_n": 14,
+   "nested_err": 8,
+   "flat_n": 26,
+   "flat_err": 9
+  }
+ }
+}

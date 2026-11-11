@@ -1,0 +1,206 @@
+{
+ "n_systems": 15,
+ "n_q": 100,
+ "text_changed": 69,
+ "output_changed": 19,
+ "by_corrected_depth": {
+  "0": {
+   "questions": 62,
+   "tau_ties_excluded": 0.81,
+   "tau_b_like": 0.71,
+   "ci95": [
+    0.44,
+    0.89
+   ],
+   "mean_move": 1.3,
+   "changed_share": 15.0,
+   "mean_abs_score_shift_pct": 3.1
+  },
+  "1": {
+   "questions": 34,
+   "tau_ties_excluded": 0.63,
+   "tau_b_like": 0.55,
+   "ci95": [
+    0.3,
+    0.81
+   ],
+   "mean_move": 2.0,
+   "changed_share": 24.0,
+   "mean_abs_score_shift_pct": 4.5
+  },
+  "2": {
+   "questions": 4,
+   "tau_ties_excluded": 0.58,
+   "tau_b_like": 0.29,
+   "ci95": [
+    0.2,
+    1.0
+   ],
+   "mean_move": 3.5,
+   "changed_share": 50.0,
+   "mean_abs_score_shift_pct": 31.7
+  }
+ },
+ "by_markers": {
+  "0": {
+   "questions": 73,
+   "tau_ties_excluded": 0.53,
+   "tau_b_like": 0.49,
+   "ci95": [
+    0.34,
+    0.8
+   ],
+   "mean_move": 2.8,
+   "changed_share": 18.0,
+   "mean_abs_score_shift_pct": 3.4
+  },
+  "1": {
+   "questions": 20,
+   "tau_ties_excluded": 0.7,
+   "tau_b_like": 0.5,
+   "ci95": [
+    0.2,
+    0.87
+   ],
+   "mean_move": 2.8,
+   "changed_share": 20.0,
+   "mean_abs_score_shift_pct": 5.3
+  },
+  "2": {
+   "questions": 7,
+   "tau_ties_excluded": 0.92,
+   "tau_b_like": 0.63,
+   "ci95": [
+    0.63,
+    1.0
+   ],
+   "mean_move": 2.0,
+   "changed_share": 29.0,
+   "mean_abs_score_shift_pct": 13.3
+  }
+ },
+ "overall": {
+  "0": {
+   "questions": 100,
+   "tau_ties_excluded": 0.68,
+   "tau_b_like": 0.66,
+   "ci95": [
+    0.46,
+    0.84
+   ],
+   "mean_move": 1.6,
+   "changed_share": 19.0,
+   "mean_abs_score_shift_pct": 2.6
+  }
+ },
+ "signals_txt": {
+  "auc_disagreement": 0.653,
+  "auc_consensus_depth": 0.506,
+  "auc_consensus_minus_written": 0.425,
+  "auc_markers": 0.581,
+  "rate_by_consensus_flat_vs_nested": [
+   68.8,
+   75.0
+  ],
+  "n_by_consensus": [
+   96,
+   4
+  ],
+  "rate_by_disagree_tercile": [
+   60.3,
+   77.3,
+   85.0
+  ],
+  "n_by_disagree_tercile": [
+   58,
+   22,
+   20
+  ]
+ },
+ "signals_out": {
+  "auc_disagreement": 0.718,
+  "auc_consensus_depth": 0.508,
+  "auc_consensus_minus_written": 0.475,
+  "auc_markers": 0.532,
+  "rate_by_consensus_flat_vs_nested": [
+   18.8,
+   25.0
+  ],
+  "n_by_consensus": [
+   96,
+   4
+  ],
+  "rate_by_disagree_tercile": [
+   12.1,
+   22.7,
+   35.0
+  ],
+  "n_by_disagree_tercile": [
+   58,
+   22,
+   20
+  ]
+ },
+ "per_system": {
+  "Alpha-SQL": {
+   "old": 83,
+   "new": 86
+  },
+  "CodeS": {
+   "old": 58,
+   "new": 55
+  },
+  "Contextual-SQL": {
+   "old": 70,
+   "new": 72
+  },
+  "DAIL-SQL": {
+   "old": 68,
+   "new": 73
+  },
+  "DIN-SQL": {
+   "old": 77,
+   "new": 75
+  },
+  "DTS-SQL": {
+   "old": 60,
+   "new": 60
+  },
+  "E-SQL": {
+   "old": 81,
+   "new": 80
+  },
+  "GSR": {
+   "old": 80,
+   "new": 71
+  },
+  "GenaSQL": {
+   "old": 83,
+   "new": 83
+  },
+  "MAC-SQL": {
+   "old": 79,
+   "new": 78
+  },
+  "OmniSQL": {
+   "old": 73,
+   "new": 76
+  },
+  "OpenSearch-SQL": {
+   "old": 73,
+   "new": 71
+  },
+  "RSL-SQL": {
+   "old": 81,
+   "new": 80
+  },
+  "TA-SQL": {
+   "old": 76,
+   "new": 74
+  },
+  "csc_sql": {
+   "old": 72,
+   "new": 77
+  }
+ }
+}

@@ -1,0 +1,218 @@
+{
+ "gptoss120b": {
+  "n": 1534,
+  "acc": 52.61,
+  "acc_tolerant": 53.46,
+  "pred_fails": 15,
+  "live_n": 65,
+  "live_correct": 16,
+  "live_tolerant": 29,
+  "tie": {
+   "gold": 2,
+   "all_tied": 2,
+   "other_tied": 0,
+   "other": 16
+  },
+  "fanout": {
+   "gold": 4,
+   "distinct": 11,
+   "other": 16
+  },
+  "empty": {
+   "pred_empty": 10,
+   "pred_nonempty": 0
+  },
+  "empty_scored_correct": 9,
+  "by_class_correct": {
+   "topk_tie": [
+    2,
+    21
+   ],
+   "topk_null": [
+    1,
+    5
+   ],
+   "count_fanout": [
+    4,
+    32
+   ],
+   "empty_answer": [
+    9,
+    10
+   ]
+  },
+  "examples_all_tied": [
+   802,
+   1090
+  ],
+  "examples_distinct": [
+   363,
+   386,
+   1203,
+   1252,
+   1280,
+   1291,
+   1295,
+   1297,
+   1302,
+   1305
+  ]
+ },
+ "qwen32b": {
+  "n": 1534,
+  "acc": 57.37,
+  "acc_tolerant": 58.41,
+  "pred_fails": 102,
+  "live_n": 65,
+  "live_correct": 20,
+  "live_tolerant": 36,
+  "tie": {
+   "gold": 5,
+   "all_tied": 1,
+   "other_tied": 2,
+   "other": 11
+  },
+  "fanout": {
+   "gold": 6,
+   "distinct": 13,
+   "other": 12
+  },
+  "empty": {
+   "pred_empty": 9,
+   "pred_nonempty": 0
+  },
+  "empty_scored_correct": 9,
+  "by_class_correct": {
+   "topk_tie": [
+    5,
+    21
+   ],
+   "topk_null": [
+    0,
+    5
+   ],
+   "count_fanout": [
+    6,
+    32
+   ],
+   "empty_answer": [
+    9,
+    10
+   ]
+  },
+  "examples_all_tied": [
+   1365
+  ],
+  "examples_distinct": [
+   386,
+   672,
+   1167,
+   1203,
+   1252,
+   1280,
+   1291,
+   1295,
+   1297,
+   1302
+  ]
+ },
+ "qwen3b": {
+  "n": 1534,
+  "acc": 25.29,
+  "acc_tolerant": 25.42,
+  "pred_fails": 619,
+  "live_n": 65,
+  "live_correct": 9,
+  "live_tolerant": 11,
+  "tie": {
+   "gold": 3,
+   "all_tied": 1,
+   "other_tied": 0,
+   "other": 7
+  },
+  "fanout": {
+   "gold": 3,
+   "distinct": 1,
+   "other": 6
+  },
+  "empty": {
+   "pred_empty": 3,
+   "pred_nonempty": 1
+  },
+  "empty_scored_correct": 3,
+  "by_class_correct": {
+   "topk_tie": [
+    3,
+    21
+   ],
+   "topk_null": [
+    0,
+    5
+   ],
+   "count_fanout": [
+    3,
+    32
+   ],
+   "empty_answer": [
+    3,
+    10
+   ]
+  },
+  "examples_all_tied": [
+   802
+  ],
+  "examples_distinct": [
+   371
+  ]
+ },
+ "qwen7b": {
+  "n": 1534,
+  "acc": 40.81,
+  "acc_tolerant": 41.13,
+  "pred_fails": 335,
+  "live_n": 65,
+  "live_correct": 14,
+  "live_tolerant": 19,
+  "tie": {
+   "gold": 2,
+   "all_tied": 1,
+   "other_tied": 2,
+   "other": 10
+  },
+  "fanout": {
+   "gold": 4,
+   "distinct": 2,
+   "other": 10
+  },
+  "empty": {
+   "pred_empty": 8,
+   "pred_nonempty": 0
+  },
+  "empty_scored_correct": 7,
+  "by_class_correct": {
+   "topk_tie": [
+    2,
+    21
+   ],
+   "topk_null": [
+    1,
+    5
+   ],
+   "count_fanout": [
+    4,
+    32
+   ],
+   "empty_answer": [
+    7,
+    10
+   ]
+  },
+  "examples_all_tied": [
+   802
+  ],
+  "examples_distinct": [
+   672,
+   1280
+  ]
+ }
+}

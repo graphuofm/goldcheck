@@ -1,0 +1,3 @@
+{"model":"Qwen/Qwen2.5-7B-Instruct","tag":"qwen7b","ids":"results/sar_local/ids_dev2024_eval300.txt","version":"dev_2024","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295512","node":"itiger01","start":"2026-11-06 17:48:05 CST"}
+{"model":"Qwen/Qwen2.5-7B-Instruct","tag":"qwen7b","ids":"results/sar_local/ids_dev2024_eval300.txt","version":"dev_2024","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295512","node":"itiger01","start":"2026-11-06 18:34:04 CST"}
+{"model":"Qwen/Qwen2.5-7B-Instruct","tag":"qwen7b","ids":"results/sar_local/ids_dev2024_eval300.txt","version":"dev_2024","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295564","node":"itiger01","start":"2026-11-06 19:41:56 CST"}

@@ -1,0 +1,156 @@
+{
+ "lift": {
+  "mini_T0->mini_T1": {
+   "static": {
+    "flagged": 175,
+    "changed_flagged": 39,
+    "unflagged": 323,
+    "changed_unflagged": 50,
+    "lift": 1.44,
+    "ci95": [
+     0.99,
+     2.09
+    ]
+   },
+   "run_once": {
+    "flagged": 40,
+    "changed_flagged": 8,
+    "unflagged": 458,
+    "changed_unflagged": 81,
+    "lift": 1.13,
+    "ci95": [
+     0.48,
+     1.98
+    ]
+   },
+   "goldcheck": {
+    "flagged": 32,
+    "changed_flagged": 18,
+    "unflagged": 466,
+    "changed_unflagged": 71,
+    "lift": 3.69,
+    "ci95": [
+     2.46,
+     5.32
+    ]
+   }
+  },
+  "mini_T1->mini_T2": {
+   "static": {
+    "flagged": 154,
+    "changed_flagged": 23,
+    "unflagged": 344,
+    "changed_unflagged": 52,
+    "lift": 0.99,
+    "ci95": [
+     0.61,
+     1.52
+    ]
+   },
+   "run_once": {
+    "flagged": 38,
+    "changed_flagged": 9,
+    "unflagged": 460,
+    "changed_unflagged": 66,
+    "lift": 1.65,
+    "ci95": [
+     0.75,
+     2.83
+    ]
+   },
+   "goldcheck": {
+    "flagged": 14,
+    "changed_flagged": 8,
+    "unflagged": 484,
+    "changed_unflagged": 67,
+    "lift": 4.13,
+    "ci95": [
+     2.14,
+     6.46
+    ]
+   }
+  },
+  "dev_2024->dev_2025": {
+   "static": {
+    "flagged": 498,
+    "changed_flagged": 109,
+    "unflagged": 1036,
+    "changed_unflagged": 143,
+    "lift": 1.59,
+    "ci95": [
+     1.24,
+     1.98
+    ]
+   },
+   "run_once": {
+    "flagged": 157,
+    "changed_flagged": 27,
+    "unflagged": 1377,
+    "changed_unflagged": 225,
+    "lift": 1.05,
+    "ci95": [
+     0.68,
+     1.45
+    ]
+   },
+   "goldcheck": {
+    "flagged": 105,
+    "changed_flagged": 37,
+    "unflagged": 1429,
+    "changed_unflagged": 215,
+    "lift": 2.34,
+    "ci95": [
+     1.71,
+     3.04
+    ]
+   }
+  }
+ },
+ "heldout": {
+  "static": {
+   "n": 1036,
+   "flagged": 321,
+   "changed_flagged": 77,
+   "unflagged": 715,
+   "changed_unflagged": 99,
+   "lift": 1.73,
+   "ci95": [
+    1.33,
+    2.27
+   ]
+  },
+  "run_once": {
+   "n": 1036,
+   "flagged": 117,
+   "changed_flagged": 20,
+   "unflagged": 919,
+   "changed_unflagged": 156,
+   "lift": 1.01,
+   "ci95": [
+    0.62,
+    1.48
+   ]
+  },
+  "goldcheck": {
+   "n": 1036,
+   "flagged": 72,
+   "changed_flagged": 27,
+   "unflagged": 964,
+   "changed_unflagged": 149,
+   "lift": 2.43,
+   "ci95": [
+    1.65,
+    3.28
+   ]
+  }
+ },
+ "kappa": {
+  "kappa": 0.604,
+  "agreement": 0.892,
+  "n": 37,
+  "ci95": [
+   0.16,
+   0.92
+  ]
+ }
+}

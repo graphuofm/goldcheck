@@ -1,0 +1,306 @@
+{
+ "gold_effect": {
+  "dev_old": {
+   "tau": 0.8,
+   "ci95": [
+    0.6,
+    0.9
+   ],
+   "scores_old_gold": {
+    "Alpha-SQL": 83,
+    "CodeS": 58,
+    "Contextual-SQL": 70,
+    "DAIL-SQL": 68,
+    "DIN-SQL": 77,
+    "DTS-SQL": 60,
+    "E-SQL": 81,
+    "GSR": 80,
+    "GenaSQL": 83,
+    "MAC-SQL": 79,
+    "OmniSQL": 73,
+    "OpenSearch-SQL": 73,
+    "RSL-SQL": 81,
+    "TA-SQL": 76,
+    "csc_sql": 72
+   },
+   "scores_new_gold": {
+    "Alpha-SQL": 74,
+    "CodeS": 52,
+    "Contextual-SQL": 59,
+    "DAIL-SQL": 61,
+    "DIN-SQL": 67,
+    "DTS-SQL": 53,
+    "E-SQL": 70,
+    "GSR": 70,
+    "GenaSQL": 70,
+    "MAC-SQL": 71,
+    "OmniSQL": 63,
+    "OpenSearch-SQL": 61,
+    "RSL-SQL": 68,
+    "TA-SQL": 66,
+    "csc_sql": 60
+   },
+   "mean_abs_shift": 9.9,
+   "max_abs_shift": 13,
+   "mean_rank_move": 1.1,
+   "max_rank_move": 4,
+   "top_old": [
+    "Alpha-SQL",
+    "GenaSQL",
+    "E-SQL"
+   ],
+   "top_new": [
+    "Alpha-SQL",
+    "MAC-SQL",
+    "E-SQL"
+   ]
+  },
+  "dev": {
+   "tau": 0.62,
+   "ci95": [
+    0.33,
+    0.79
+   ],
+   "scores_old_gold": {
+    "Alpha-SQL": 77,
+    "CodeS": 56,
+    "Contextual-SQL": 68,
+    "DAIL-SQL": 66,
+    "DIN-SQL": 68,
+    "DTS-SQL": 61,
+    "E-SQL": 73,
+    "GSR": 81,
+    "GenaSQL": 80,
+    "MAC-SQL": 71,
+    "OmniSQL": 69,
+    "OpenSearch-SQL": 68,
+    "RSL-SQL": 73,
+    "TA-SQL": 71,
+    "csc_sql": 71
+   },
+   "scores_new_gold": {
+    "Alpha-SQL": 86,
+    "CodeS": 55,
+    "Contextual-SQL": 72,
+    "DAIL-SQL": 73,
+    "DIN-SQL": 75,
+    "DTS-SQL": 60,
+    "E-SQL": 80,
+    "GSR": 71,
+    "GenaSQL": 83,
+    "MAC-SQL": 78,
+    "OmniSQL": 76,
+    "OpenSearch-SQL": 71,
+    "RSL-SQL": 80,
+    "TA-SQL": 74,
+    "csc_sql": 77
+   },
+   "mean_abs_shift": 5.5,
+   "max_abs_shift": 10,
+   "mean_rank_move": 2.0,
+   "max_rank_move": 11,
+   "top_old": [
+    "GSR",
+    "GenaSQL",
+    "Alpha-SQL"
+   ],
+   "top_new": [
+    "Alpha-SQL",
+    "GenaSQL",
+    "E-SQL"
+   ]
+  },
+  "prediction_text_identical_old_vs_new": {
+   "same": 734,
+   "total": 1500
+  }
+ },
+ "mini": {
+  "mcfadden_r2": {
+   "pre_review_shape": 0.054,
+   "shape_plus_lints": 0.102,
+   "database_identity": 0.048,
+   "both": 0.101
+  },
+  "aic": {
+   "intercept": 673.8,
+   "shape": 649.5,
+   "database": 661.4,
+   "both": 637.6
+  },
+  "per_db": {
+   "california_schools": {
+    "n": 30,
+    "rate": 66.7
+   },
+   "card_games": {
+    "n": 52,
+    "rate": 32.7
+   },
+   "codebase_community": {
+    "n": 49,
+    "rate": 34.7
+   },
+   "debit_card_specializing": {
+    "n": 30,
+    "rate": 43.3
+   },
+   "european_football_2": {
+    "n": 51,
+    "rate": 33.3
+   },
+   "financial": {
+    "n": 30,
+    "rate": 40.0
+   },
+   "formula_1": {
+    "n": 66,
+    "rate": 36.4
+   },
+   "student_club": {
+    "n": 48,
+    "rate": 31.2
+   },
+   "superhero": {
+    "n": 52,
+    "rate": 28.8
+   },
+   "thrombosis_prediction": {
+    "n": 50,
+    "rate": 68.0
+   },
+   "toxicology": {
+    "n": 40,
+    "rate": 42.5
+   }
+  }
+ },
+ "dev_heldout": {
+  "mcfadden_r2": {
+   "pre_review_shape": 0.025,
+   "shape_plus_lints": 0.05,
+   "database_identity": 0.096,
+   "both": 0.11
+  },
+  "aic": {
+   "intercept": 1196.9,
+   "shape": 1178.9,
+   "database": 1102.6,
+   "both": 1097.8
+  },
+  "per_db": {
+   "california_schools": {
+    "n": 59,
+    "rate": 47.5
+   },
+   "card_games": {
+    "n": 139,
+    "rate": 25.9
+   },
+   "codebase_community": {
+    "n": 137,
+    "rate": 23.4
+   },
+   "debit_card_specializing": {
+    "n": 34,
+    "rate": 26.5
+   },
+   "european_football_2": {
+    "n": 78,
+    "rate": 23.1
+   },
+   "financial": {
+    "n": 76,
+    "rate": 68.4
+   },
+   "formula_1": {
+    "n": 108,
+    "rate": 20.4
+   },
+   "student_club": {
+    "n": 110,
+    "rate": 11.8
+   },
+   "superhero": {
+    "n": 77,
+    "rate": 6.5
+   },
+   "thrombosis_prediction": {
+    "n": 113,
+    "rate": 33.6
+   },
+   "toxicology": {
+    "n": 105,
+    "rate": 19.0
+   }
+  }
+ },
+ "dev_heldout_output": {
+  "mcfadden_r2": {
+   "pre_review_shape": 0.033,
+   "shape_plus_lints": 0.055,
+   "database_identity": 0.135,
+   "both": 0.148
+  },
+  "aic": {
+   "intercept": 939.8,
+   "shape": 920.8,
+   "database": 833.3,
+   "both": 832.6
+  },
+  "per_db": {
+   "california_schools": {
+    "n": 59,
+    "rate": 35.6
+   },
+   "card_games": {
+    "n": 139,
+    "rate": 15.8
+   },
+   "codebase_community": {
+    "n": 137,
+    "rate": 12.4
+   },
+   "debit_card_specializing": {
+    "n": 34,
+    "rate": 11.8
+   },
+   "european_football_2": {
+    "n": 78,
+    "rate": 9.0
+   },
+   "financial": {
+    "n": 76,
+    "rate": 61.8
+   },
+   "formula_1": {
+    "n": 108,
+    "rate": 11.1
+   },
+   "student_club": {
+    "n": 110,
+    "rate": 4.5
+   },
+   "superhero": {
+    "n": 77,
+    "rate": 5.2
+   },
+   "thrombosis_prediction": {
+    "n": 113,
+    "rate": 19.5
+   },
+   "toxicology": {
+    "n": 105,
+    "rate": 12.4
+   }
+  }
+ },
+ "dev_exec": {
+  "all_text": 396,
+  "all_output": 250,
+  "all_identical": 146,
+  "held_text": 273,
+  "held_output": 174,
+  "held_identical": 99
+ }
+}

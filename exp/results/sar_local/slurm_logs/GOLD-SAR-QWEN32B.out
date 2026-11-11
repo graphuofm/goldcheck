@@ -1,0 +1,493 @@
+Fri Nov  6 18:04:07 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:2F:00.0 Off |                    0 |
+| N/A   25C    P0             69W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          Off |   00000000:46:00.0 Off |                    0 |
+| N/A   33C    P0             72W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          Off |   00000000:54:00.0 Off |                    0 |
+| N/A   21C    P0             67W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          Off |   00000000:CF:00.0 Off |                    0 |
+| N/A   22C    P0             70W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2026-11-06 18:04:18 CST] Qwen/Qwen2.5-Coder-32B-Instruct（qwen32b，dev_2024，results/sar_local/ids_dev2024_eval300.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-06 18:05:11 CST] vllm serve Qwen/Qwen2.5-Coder-32B-Instruct --port 36681 --served-model-name qwen32b --max-model-len 32768 --gpu-memory-utilization 0.90（节点 itiger01，GPU 1）
+Terminated
+/project/jding2/goldcheck/bin/sar_task.sh: line 37: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+grep: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+[2026-11-06 18:33:24 CST] 完成  行，报错 ；退出码 143
+Fri Nov  6 18:34:03 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:2F:00.0 Off |                    0 |
+| N/A   34C    P0            116W /  700W |   15426MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          Off |   00000000:46:00.0 Off |                    0 |
+| N/A   41C    P0            124W /  700W |   63320MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA H100 80GB HBM3          Off |   00000000:54:00.0 Off |                    0 |
+| N/A   28C    P0             68W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA H100 80GB HBM3          Off |   00000000:CF:00.0 Off |                    0 |
+| N/A   28C    P0             71W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A    437139      C   VLLM::EngineCore                            15416MiB |
+|    1   N/A  N/A    437123      C   VLLM::EngineCore                            63310MiB |
++-----------------------------------------------------------------------------------------+
+[2026-11-06 18:34:04 CST] Qwen/Qwen2.5-Coder-32B-Instruct（qwen32b，dev_2024，results/sar_local/ids_dev2024_eval300.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-06 18:34:08 CST] vllm serve Qwen/Qwen2.5-Coder-32B-Instruct --port 39947 --served-model-name qwen32b --max-model-len 32768 --gpu-memory-utilization 0.90 --safetensors-load-strategy eager（节点 itiger01，GPU 0）
+FAILED: vLLM 退出了，日志末尾：
+[1;36m(APIServer pid=440522)[0;0m     async with build_async_engine_client_from_engine_args(
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 210, in __aenter__
+[1;36m(APIServer pid=440522)[0;0m     return await anext(self.gen)
+[1;36m(APIServer pid=440522)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 225, in build_async_engine_client_from_engine_args
+[1;36m(APIServer pid=440522)[0;0m     async_llm = AsyncLLM.from_vllm_config(
+[1;36m(APIServer pid=440522)[0;0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/utils/__init__.py", line 1572, in inner
+[1;36m(APIServer pid=440522)[0;0m     return fn(*args, **kwargs)
+[1;36m(APIServer pid=440522)[0;0m            ^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 207, in from_vllm_config
+[1;36m(APIServer pid=440522)[0;0m     return cls(
+[1;36m(APIServer pid=440522)[0;0m            ^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 134, in __init__
+[1;36m(APIServer pid=440522)[0;0m     self.engine_core = EngineCoreClient.make_async_mp_client(
+[1;36m(APIServer pid=440522)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 102, in make_async_mp_client
+[1;36m(APIServer pid=440522)[0;0m     return AsyncMPClient(*client_args)
+[1;36m(APIServer pid=440522)[0;0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 769, in __init__
+[1;36m(APIServer pid=440522)[0;0m     super().__init__(
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 448, in __init__
+[1;36m(APIServer pid=440522)[0;0m     with launch_core_engines(vllm_config, executor_class,
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 144, in __exit__
+[1;36m(APIServer pid=440522)[0;0m     next(self.gen)
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 732, in launch_core_engines
+[1;36m(APIServer pid=440522)[0;0m     wait_for_engine_startup(
+[1;36m(APIServer pid=440522)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 785, in wait_for_engine_startup
+[1;36m(APIServer pid=440522)[0;0m     raise RuntimeError("Engine core initialization failed. "
+[1;36m(APIServer pid=440522)[0;0m RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+/project/jding2/goldcheck/bin/sar_task.sh: line 37: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+grep: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+[2026-11-06 18:38:43 CST] 完成  行，报错 ；退出码 3
+Fri Nov  6 19:40:10 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:54:00.0 Off |                    0 |
+| N/A   24C    P0             67W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA H100 80GB HBM3          Off |   00000000:CF:00.0 Off |                    0 |
+| N/A   25C    P0             70W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2026-11-06 19:40:11 CST] Qwen/Qwen2.5-Coder-32B-Instruct（qwen32b，dev_2024，results/sar_local/ids_dev2024_eval300.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-06 19:40:11 CST] vllm serve Qwen/Qwen2.5-Coder-32B-Instruct --port 42951 --served-model-name qwen32b --max-model-len 32768 --gpu-memory-utilization 0.90 --safetensors-load-strategy eager（节点 itiger01，GPU 0）
+FAILED: vLLM 退出了，日志末尾：
+[1;36m(APIServer pid=454601)[0;0m     async with build_async_engine_client_from_engine_args(
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 210, in __aenter__
+[1;36m(APIServer pid=454601)[0;0m     return await anext(self.gen)
+[1;36m(APIServer pid=454601)[0;0m            ^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/entrypoints/openai/api_server.py", line 225, in build_async_engine_client_from_engine_args
+[1;36m(APIServer pid=454601)[0;0m     async_llm = AsyncLLM.from_vllm_config(
+[1;36m(APIServer pid=454601)[0;0m                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/utils/__init__.py", line 1572, in inner
+[1;36m(APIServer pid=454601)[0;0m     return fn(*args, **kwargs)
+[1;36m(APIServer pid=454601)[0;0m            ^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 207, in from_vllm_config
+[1;36m(APIServer pid=454601)[0;0m     return cls(
+[1;36m(APIServer pid=454601)[0;0m            ^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/async_llm.py", line 134, in __init__
+[1;36m(APIServer pid=454601)[0;0m     self.engine_core = EngineCoreClient.make_async_mp_client(
+[1;36m(APIServer pid=454601)[0;0m                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 102, in make_async_mp_client
+[1;36m(APIServer pid=454601)[0;0m     return AsyncMPClient(*client_args)
+[1;36m(APIServer pid=454601)[0;0m            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 769, in __init__
+[1;36m(APIServer pid=454601)[0;0m     super().__init__(
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/core_client.py", line 448, in __init__
+[1;36m(APIServer pid=454601)[0;0m     with launch_core_engines(vllm_config, executor_class,
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/python/cpython-3.11.18-linux-x86_64-gnu/lib/python3.11/contextlib.py", line 144, in __exit__
+[1;36m(APIServer pid=454601)[0;0m     next(self.gen)
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 732, in launch_core_engines
+[1;36m(APIServer pid=454601)[0;0m     wait_for_engine_startup(
+[1;36m(APIServer pid=454601)[0;0m   File "/project/jding2/cvpr/tgmscv/venv/lib/python3.11/site-packages/vllm/v1/engine/utils.py", line 785, in wait_for_engine_startup
+[1;36m(APIServer pid=454601)[0;0m     raise RuntimeError("Engine core initialization failed. "
+[1;36m(APIServer pid=454601)[0;0m RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
+/project/jding2/goldcheck/bin/sar_task.sh: line 40: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+grep: results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl: No such file or directory
+[2026-11-06 19:41:56 CST] 完成  行，报错 ；退出码 3
+Fri Nov  6 20:40:12 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 560.35.03              Driver Version: 560.35.03      CUDA Version: 12.6     |
+|-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA H100 80GB HBM3          Off |   00000000:CF:00.0 Off |                    0 |
+| N/A   24C    P0             70W /  700W |       1MiB /  81559MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+                                                                                         
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI        PID   Type   Process name                              GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+[2026-11-06 20:40:13 CST] Qwen/Qwen2.5-Coder-32B-Instruct（qwen32b，dev_2024，results/sar_local/ids_dev2024_eval300.txt），GPU NVIDIA H100 80GB HBM3，精度 bf16
+[2026-11-06 20:40:13 CST] vllm serve Qwen/Qwen2.5-Coder-32B-Instruct --port 34581 --served-model-name qwen32b --max-model-len 32768 --gpu-memory-utilization 0.95 --safetensors-load-strategy eager（节点 itiger01，GPU 0）
+[2026-11-06 20:41:43 CST] vLLM 就绪（等了 90 秒），开始客户端
++ SAR_BACKEND=openai OPENAI_URL=http://127.0.0.1:34581/v1 python3 34_sar_local.py --model qwen32b --version dev_2024 --ids results/sar_local/ids_dev2024_eval300.txt --out results/sar_local/qwen32b_dev_2024_ids_dev2024_eval300.jsonl --workers 16 --tag qwen32b
+342 no yes 3 29.9
+80 yes no 4 33.1
+81 no no 4 34.4
+269 no yes 4 36.7
+352 yes no 4 41.0
+82 no yes 4 45.3
+68 no no 4 52.8
+101 no no 4 58.6
+298 yes no 4 59.7
+37 yes no 5 66.7
+30 yes no 4 87.2
+371 yes no 5 95.6
+515 yes yes 2 57.6
+150 yes no 5 101.3
+476 no yes 4 66.7
+569 yes no 3 46.6
+386 no yes 4 85.0
+517 yes no 4 70.4
+567 yes no 4 57.8
+317 no no 6 134.2
+571 no yes 3 68.9
+631 no no 4 46.8
+417 yes no 6 108.4
+632 no no 4 46.8
+635 no no 3 44.6
+668 yes no 3 35.1
+94 no yes 7 176.5
+610 no yes 5 90.9
+633 yes no 5 79.3
+701 yes no 4 43.1
+683 yes no 4 60.3
+672 no no 5 82.1
+416 no no 10 168.0
+693 no no 4 62.0
+689 no no 4 64.4
+671 no no 7 101.6
+802 no yes 3 42.4
+736 yes yes 4 73.6
+794 no yes 3 47.8
+913 yes no 2 20.0
+677 yes no 7 100.6
+766 no yes 4 65.1
+810 no yes 4 56.9
+908 yes no 4 48.9
+906 yes no 4 54.7
+716 no yes 6 108.3
+832 no yes 4 63.4
+1002 no no 2 42.4
+847 no yes 6 88.8
+1009 no no 3 58.5
+943 no yes 5 87.8
+1090 yes no 3 67.5
+938 no yes 6 136.8
+1026 no no 4 112.9
+1008 no yes 5 133.2
+1028 yes no 4 115.7
+1024 no no 5 133.5
+383 no no 4 393.9
+1117 yes no 4 129.4
+1167 no no 4 124.5
+1176 no no 4 99.8
+944 yes no 7 207.3
+1027 no no 5 181.3
+1218 no no 3 75.9
+936 no no 10 230.2
+1196 no yes 3 88.9
+1245 no yes 4 86.1
+1168 no yes 5 160.2
+1253 no yes 4 76.5
+1203 no no 5 114.9
+520 no yes 9 442.3
+1282 yes no 3 49.9
+1279 no yes 2 61.5
+1283 yes no 3 54.1
+1256 no yes 4 85.9
+1278 yes no 5 85.0
+1289 no no 3 45.2
+1287 yes no 4 51.4
+1252 no no 7 137.8
+1280 yes no 6 92.9
+1290 no yes 5 60.5
+1291 yes no 4 48.9
+1298 yes no 4 45.6
+1286 yes no 5 84.3
+1295 yes no 5 63.1
+1302 no no 4 51.4
+1297 yes yes 5 67.8
+1306 no yes 4 49.6
+1318 yes no 3 30.7
+1304 yes no 5 59.6
+1317 yes no 3 36.2
+1365 yes no 3 36.7
+1315 no no 4 51.1
+1308 no yes 5 74.3
+1305 yes no 7 90.9
+1407 no no 4 48.5
+1388 no yes 4 69.0
+1389 no no 4 71.2
+5 yes no 4 63.2
+23 yes no 2 36.8
+1517 yes no 5 71.9
+11 yes no 4 81.1
+22 yes no 4 83.1
+15 no yes 4 95.4
+1490 yes no 5 128.1
+1504 no no 7 130.3
+60 yes no 2 58.3
+639 None None 30 605.0
+43 yes no 3 94.5
+27 no yes 5 134.7
+53 yes no 4 128.3
+52 yes no 4 132.3
+1222 yes no 5 422.3
+35 yes yes 5 186.3
+109 yes no 3 108.2
+1254 yes no 4 387.0
+111 yes no 3 109.8
+106 yes no 4 122.3
+51 no yes 5 186.1
+126 yes no 4 106.7
+162 yes no 2 47.9
+141 yes no 3 75.5
+69 yes no 4 154.3
+120 no yes 4 115.2
+67 yes no 5 170.3
+178 yes no 2 31.7
+96 yes no 5 150.2
+240 yes no 2 14.9
+264 yes no 2 13.9
+291 yes no 2 9.2
+167 yes no 4 46.8
+192 yes no 3 29.3
+299 yes no 2 7.2
+283 yes no 4 20.0
+155 no no 4 84.2
+362 yes no 2 16.6
+207 yes no 5 47.1
+328 yes no 4 29.7
+218 no yes 4 50.9
+232 yes no 4 50.6
+189 no yes 3 63.1
+364 yes no 2 21.4
+332 yes no 4 37.7
+286 no no 5 49.8
+193 no yes 5 63.2
+373 yes no 2 21.3
+297 yes yes 5 54.7
+292 no yes 7 64.2
+414 yes no 2 27.1
+408 no yes 2 29.8
+180 yes no 7 90.1
+376 yes no 3 37.2
+351 yes no 4 57.7
+452 yes no 2 30.4
+430 no yes 3 48.6
+491 yes no 2 28.8
+503 yes no 2 25.7
+475 no no 3 44.4
+447 no yes 4 66.4
+501 yes no 3 46.3
+435 yes no 4 74.2
+486 yes no 4 58.3
+337 yes no 6 113.9
+438 yes yes 4 88.4
+495 no yes 4 67.6
+454 yes no 5 89.1
+549 yes no 2 40.9
+560 yes no 2 36.6
+494 yes no 4 74.1
+459 no no 5 92.5
+508 no yes 4 69.1
+612 yes no 2 20.9
+584 no yes 3 43.1
+617 yes no 2 23.8
+644 yes no 2 21.8
+669 yes no 2 20.7
+541 yes no 6 71.8
+599 yes no 4 50.0
+618 yes yes 2 30.8
+596 yes no 4 53.4
+628 yes no 4 33.0
+516 yes no 4 84.4
+678 yes no 3 28.2
+1148 None None None None
+600 None None None None
+705 None None None None
+735 None None None None
+602 None None None None
+688 None None None None
+749 None None None None
+686 None None None None
+773 None None None None
+775 None None None None
+694 None None None None
+665 None None None None
+687 None None None None
+779 None None None None
+747 None None None None
+748 None None None None
+781 None None None None
+782 None None None None
+787 None None None None
+788 None None None None
+797 None None None None
+798 None None None None
+801 None None None None
+805 None None None None
+806 None None None None
+813 None None None None
+840 None None None None
+851 None None None None
+860 None None None None
+868 None None None None
+876 None None None None
+879 None None None None
+884 None None None None
+894 None None None None
+896 None None None None
+899 None None None None
+902 None None None None
+907 None None None None
+912 None None None None
+926 None None None None
+933 None None None None
+940 None None None None
+946 None None None None
+955 None None None None
+959 None None None None
+966 None None None None
+977 None None None None
+978 None None None None
+980 None None None None
+987 None None None None
+989 None None None None
+1003 None None None None
+1005 None None None None
+1016 None None None None
+1017 None None None None
+1025 None None None None
+1031 None None None None
+1033 None None None None
+1036 None None None None
+1040 None None None None
+1043 None None None None
+1047 None None None None
+1048 None None None None
+1085 None None None None
+1092 None None None None
+1099 None None None None
+1101 None None None None
+1120 None None None None
+1134 None None None None
+1141 None None None None
+1144 None None None None
+1156 None None None None
+1159 None None None None
+1162 None None None None
+1172 None None None None
+1184 None None None None
+1198 None None None None
+1205 None None None None
+1215 None None None None
+1221 None None None None
+1229 None None None None
+1232 None None None None
+1242 None None None None
+1248 None None None None
+1250 None None None None
+1261 None None None None
+1262 None None None None
+1268 None None None None
+1322 None None None None
+1325 None None None None
+1336 None None None None
+1348 None None None None
+1362 None None None None
+1367 None None None None
+1371 None None None None
+1377 None None None None
+1384 None None None None
+1413 None None None None
+1421 None None None None
+1430 None None None None
+1440 None None None None
+1441 None None None None
+1443 None None None None
+1445 None None None None
+1458 None None None None
+1462 None None None None
+1463 None None None None
+1474 None None None None
+1486 None None None None
+1495 None None None None
+1500 None None None None
+1507 None None None None
+1508 None None None None
+1516 None None None None
+1524 None None None None
+1526 None None None None
+1532 None None None None
+[2026-11-06 20:58:32 CST] 客户端结束，退出码 0
+[2026-11-06 20:58:37 CST] 完成 300 行，报错 117；退出码 0

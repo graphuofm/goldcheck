@@ -1,0 +1,1 @@
+{"model":"Qwen/Qwen2.5-Coder-32B-Instruct","tag":"qwen32b","ids":"results/sar_local/ids_dev2025_findings65.txt","version":"dev_2025","gpu":"NVIDIA H100 80GB HBM3","precision":"bf16","job":"295580","node":"itiger01","start":"2026-11-06 21:06:09 CST"}

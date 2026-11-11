@@ -1,0 +1,47 @@
+{
+ "leave_one_db_out_z": {
+  "california_schools": 4.73,
+  "card_games": 4.22,
+  "codebase_community": 4.29,
+  "debit_card_specializing": 4.31,
+  "european_football_2": 4.39,
+  "financial": 4.67,
+  "formula_1": 4.57,
+  "student_club": 3.9,
+  "superhero": 3.3,
+  "thrombosis_prediction": 3.93,
+  "toxicology": 4.36
+ },
+ "bootstrap_ci": {
+  "stratum0": {
+   "rate": 23.4,
+   "ci95": [
+    19.3,
+    27.6
+   ]
+  },
+  "stratum1": {
+   "rate": 38.2,
+   "ci95": [
+    27.6,
+    48.7
+   ]
+  },
+  "stratum2": {
+   "rate": 75.0,
+   "ci95": [
+    50.0,
+    100.0
+   ]
+  }
+ },
+ "aic_single_predictor": {
+  "d_demand": 565.5,
+  "ntab": 580.1,
+  "njoin": 581.6
+ },
+ "interaction_depth_x_qlen": {
+  "z": -1.42,
+  "p_two_sided": 0.156
+ }
+}

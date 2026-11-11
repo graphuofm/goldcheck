@@ -1,0 +1,160 @@
+{
+ "mini": {
+  "depth": {
+   "flat_n": 435,
+   "flat_gain": 30,
+   "flat_gain_pct": 6.9,
+   "nested_n": 63,
+   "nested_lose": 5,
+   "nested_lose_pct": 7.9,
+   "fisher_p": 0.791,
+   "add_total": 32,
+   "remove_total": 5
+  },
+  "depth_given_changed": {
+   "flat_changed": 169,
+   "gain": 30,
+   "nested_changed": 32,
+   "lose": 5,
+   "any_depth_change_nested": 7
+  },
+  "tables": {
+   "add": 17,
+   "remove": 22,
+   "p_one_sided": 0.83
+  },
+  "joins": {
+   "add": 20,
+   "remove": 24,
+   "p_one_sided": 0.77
+  }
+ },
+ "dev_all": {
+  "depth": {
+   "flat_n": 1410,
+   "flat_gain": 114,
+   "flat_gain_pct": 8.1,
+   "nested_n": 124,
+   "nested_lose": 8,
+   "nested_lose_pct": 6.5,
+   "fisher_p": 0.607,
+   "add_total": 116,
+   "remove_total": 8
+  },
+  "depth_given_changed": {
+   "flat_changed": 357,
+   "gain": 114,
+   "nested_changed": 39,
+   "lose": 8,
+   "any_depth_change_nested": 10
+  },
+  "tables": {
+   "add": 103,
+   "remove": 28,
+   "p_one_sided": 1.4e-11
+  },
+  "joins": {
+   "add": 107,
+   "remove": 32,
+   "p_one_sided": 6e-11
+  }
+ },
+ "dev_heldout": {
+  "depth": {
+   "flat_n": 975,
+   "flat_gain": 85,
+   "flat_gain_pct": 8.7,
+   "nested_n": 61,
+   "nested_lose": 6,
+   "nested_lose_pct": 9.8,
+   "fisher_p": 0.814,
+   "add_total": 86,
+   "remove_total": 6
+  },
+  "depth_given_changed": {
+   "flat_changed": 253,
+   "gain": 85,
+   "nested_changed": 20,
+   "lose": 6,
+   "any_depth_change_nested": 7
+  },
+  "tables": {
+   "add": 78,
+   "remove": 14,
+   "p_one_sided": 3.1e-12
+  },
+  "joins": {
+   "add": 82,
+   "remove": 17,
+   "p_one_sided": 1.1e-11
+  }
+ },
+ "dev_table_add_by_db": [
+  [
+   "financial",
+   52
+  ],
+  [
+   "california_schools",
+   26
+  ],
+  [
+   "toxicology",
+   14
+  ],
+  [
+   "formula_1",
+   5
+  ],
+  [
+   "student_club",
+   2
+  ],
+  [
+   "card_games",
+   1
+  ],
+  [
+   "codebase_community",
+   1
+  ],
+  [
+   "superhero",
+   1
+  ],
+  [
+   "thrombosis_prediction",
+   1
+  ]
+ ],
+ "dev_excl_financial_schools": {
+  "depth": {
+   "flat_n": 1225,
+   "flat_gain": 36,
+   "flat_gain_pct": 2.9,
+   "nested_n": 114,
+   "nested_lose": 8,
+   "nested_lose_pct": 7.0,
+   "fisher_p": 0.047,
+   "add_total": 37,
+   "remove_total": 8
+  },
+  "depth_given_changed": {
+   "flat_changed": 252,
+   "gain": 36,
+   "nested_changed": 34,
+   "lose": 8,
+   "any_depth_change_nested": 9
+  },
+  "tables": {
+   "add": 25,
+   "remove": 24,
+   "p_one_sided": 0.5
+  },
+  "joins": {
+   "add": 29,
+   "remove": 28,
+   "p_one_sided": 0.5
+  }
+ }
+}

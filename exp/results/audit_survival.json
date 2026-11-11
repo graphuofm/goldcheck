@@ -1,0 +1,155 @@
+{
+ "caught1": 97,
+ "caught2": 134,
+ "both": 30,
+ "any": 201,
+ "A_vs_original_gold": {
+  "n": [
+   410,
+   76,
+   12
+  ],
+  "k": [
+   144,
+   46,
+   11
+  ],
+  "rate": [
+   35.1,
+   60.5,
+   91.7
+  ],
+  "CA_z": 5.53,
+  "CA_p": 1.64e-08,
+  "fisher_p": 0.000106
+ },
+ "C_round1_only": {
+  "n": [
+   410,
+   76,
+   12
+  ],
+  "k": [
+   67,
+   25,
+   5
+  ],
+  "rate": [
+   16.3,
+   32.9,
+   41.7
+  ],
+  "CA_z": 3.84,
+  "CA_p": 6.03e-05,
+  "fisher_p": 0.0375
+ },
+ "C_round2_only": {
+  "n": [
+   410,
+   76,
+   12
+  ],
+  "k": [
+   96,
+   29,
+   9
+  ],
+  "rate": [
+   23.4,
+   38.2,
+   75.0
+  ],
+  "CA_z": 4.44,
+  "CA_p": 4.41e-06,
+  "fisher_p": 0.000305
+ },
+ "B_survival": {
+  "n": [
+   144,
+   46,
+   11
+  ],
+  "k": [
+   77,
+   21,
+   6
+  ],
+  "rate": [
+   53.5,
+   45.7,
+   54.5
+  ],
+  "CA_z": -0.53,
+  "CA_p_two_sided": 0.593
+ },
+ "depth_crosstab": {
+  "dd0_dw0_ok": 266,
+  "dd1_dw0_err": 25,
+  "dd1_dw1_err": 21,
+  "dd0_dw0_err": 139,
+  "dd2_dw0_err": 5,
+  "dd1_dw1_ok": 30,
+  "dd2_dw2_err": 4,
+  "dd2_dw2_ok": 1,
+  "dd0_dw1_err": 4,
+  "dd2_dw1_err": 2,
+  "dd0_dw2_err": 1
+ },
+ "per_db_any": {
+  "thrombosis_prediction": {
+   "k": 34,
+   "n": 50,
+   "rate": 68.0
+  },
+  "california_schools": {
+   "k": 20,
+   "n": 30,
+   "rate": 66.7
+  },
+  "debit_card_specializing": {
+   "k": 13,
+   "n": 30,
+   "rate": 43.3
+  },
+  "toxicology": {
+   "k": 17,
+   "n": 40,
+   "rate": 42.5
+  },
+  "financial": {
+   "k": 12,
+   "n": 30,
+   "rate": 40.0
+  },
+  "formula_1": {
+   "k": 24,
+   "n": 66,
+   "rate": 36.4
+  },
+  "codebase_community": {
+   "k": 17,
+   "n": 49,
+   "rate": 34.7
+  },
+  "european_football_2": {
+   "k": 17,
+   "n": 51,
+   "rate": 33.3
+  },
+  "card_games": {
+   "k": 17,
+   "n": 52,
+   "rate": 32.7
+  },
+  "student_club": {
+   "k": 15,
+   "n": 48,
+   "rate": 31.2
+  },
+  "superhero": {
+   "k": 15,
+   "n": 52,
+   "rate": 28.8
+  }
+ }
+}

@@ -1,0 +1,763 @@
+{
+ "models": {
+  "qwen3b": {
+   "n": 300,
+   "verdicts": {
+    "yes": 201,
+    "no": 91,
+    "None": 8
+   },
+   "per_class": {
+    "topk_tie": {
+     "n": 41,
+     "judged_wrong": 13,
+     "named": 1,
+     "named_and_wrong": 1
+    },
+    "topk_null": {
+     "n": 7,
+     "judged_wrong": 1,
+     "named": 1,
+     "named_and_wrong": 0
+    },
+    "count_fanout": {
+     "n": 54,
+     "judged_wrong": 19,
+     "named": 8,
+     "named_and_wrong": 6
+    },
+    "empty_answer": {
+     "n": 8,
+     "judged_wrong": 6,
+     "named": 4,
+     "named_and_wrong": 3
+    }
+   },
+   "findings_total": 110,
+   "named_total": 14,
+   "live_queries": 105,
+   "live_judged_wrong": 39,
+   "agreement": {
+    "live": {
+     "wrong": 39,
+     "wrong_changed": 13,
+     "correct_or_none": 66,
+     "correct_changed": 24,
+     "lift": 0.92
+    },
+    "others": {
+     "wrong": 52,
+     "wrong_changed": 9,
+     "correct_or_none": 143,
+     "correct_changed": 20,
+     "lift": 1.24
+    }
+   },
+   "cost": {
+    "median_s": 7.5,
+    "mean_s": 17.0,
+    "p95_s": 23.5,
+    "max_s": 789.9,
+    "gpu_hours": 1.42,
+    "mean_tokens_in": 17278,
+    "mean_tokens_out": 786,
+    "median_steps": 3.0,
+    "mean_steps": 3.9,
+    "no_verdict": 8,
+    "hit_30_steps": 7,
+    "any_bad_format": 64
+   },
+   "q802": {
+    "correct": "yes",
+    "analysis": "Correctness: Yes\nIs_ambiguous: No\nExplanation: The annotated SQL query correctly selects the tallest superhero by ordering the superheroes by their height in descending order and limiting the result to one row. The result [('Surtur',)] confirms that Surtur is the tallest superhero according to the given data.\nRevised: None needed."
+   },
+   "q1203": {
+    "correct": "yes",
+    "analysis": "Correctness: Yes\nIs_ambiguous: No\nExplanation: The annotated query correctly uses the WHERE clause to filter patients who are female and have white blood cells below 3.5. The result of running the query is 641, which matches the expected count based on the conditions provided. Therefore, the query is correct.\nRevised: No revision needed."
+   },
+   "name": "Qwen2.5-3B-Instruct",
+   "gpu": "Quadro RTX 6000"
+  },
+  "qwen7b": {
+   "n": 300,
+   "verdicts": {
+    "yes": 239,
+    "None": 9,
+    "no": 52
+   },
+   "per_class": {
+    "topk_tie": {
+     "n": 41,
+     "judged_wrong": 10,
+     "named": 6,
+     "named_and_wrong": 3
+    },
+    "topk_null": {
+     "n": 7,
+     "judged_wrong": 2,
+     "named": 1,
+     "named_and_wrong": 0
+    },
+    "count_fanout": {
+     "n": 54,
+     "judged_wrong": 11,
+     "named": 34,
+     "named_and_wrong": 3
+    },
+    "empty_answer": {
+     "n": 8,
+     "judged_wrong": 7,
+     "named": 6,
+     "named_and_wrong": 6
+    }
+   },
+   "findings_total": 110,
+   "named_total": 47,
+   "live_queries": 105,
+   "live_judged_wrong": 28,
+   "agreement": {
+    "live": {
+     "wrong": 28,
+     "wrong_changed": 11,
+     "correct_or_none": 77,
+     "correct_changed": 26,
+     "lift": 1.16
+    },
+    "others": {
+     "wrong": 24,
+     "wrong_changed": 4,
+     "correct_or_none": 171,
+     "correct_changed": 25,
+     "lift": 1.14
+    }
+   },
+   "cost": {
+    "median_s": 5.3,
+    "mean_s": 6.0,
+    "p95_s": 10.3,
+    "max_s": 46.3,
+    "gpu_hours": 0.5,
+    "mean_tokens_in": 11581,
+    "mean_tokens_out": 503,
+    "median_steps": 3.0,
+    "mean_steps": 3.3,
+    "no_verdict": 9,
+    "hit_30_steps": 0,
+    "any_bad_format": 12
+   },
+   "q802": {
+    "correct": "yes",
+    "analysis": "Correctness: Yes\nIs_ambiguous: No\nExplanation: The annotated query is logically correct as it orders the superheroes by height in descending order and limits the result to the tallest one. The query correctly identifies 'Surtur' and 'Ymir' as the tallest superheroes. The question is not ambiguous as it clearly asks for the tallest superhero.\nRevised: No revisions needed."
+   },
+   "q1203": {
+    "correct": "yes",
+    "analysis": "Correctness: Yes\nIs_ambiguous: No\nExplanation: The annotated SQL query is logically correct. It joins the Patient and Laboratory tables on the patient ID, filters for female patients (SEX = 'F'), and counts the number of patients whose white blood cell count (WBC) is below 3.5. The use of DISTINCT in the SELECT statement ensures that each patient is counted only once, even if they have multiple re"
+   },
+   "name": "Qwen2.5-7B-Instruct",
+   "gpu": {
+    "model": "Qwen/Qwen2.5-7B-Instruct",
+    "tag": "qwen7b",
+    "ids": "results/sar_local/ids_dev2024_eval300.txt",
+    "version": "dev_2024",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "precision": "bf16",
+    "job": "295564",
+    "node": "itiger01",
+    "start": "2026-11-06 19:41:56 CST"
+   }
+  },
+  "qwen32b": {
+   "n": 300,
+   "verdicts": {
+    "no": 115,
+    "yes": 183,
+    "None": 2
+   },
+   "per_class": {
+    "topk_tie": {
+     "n": 41,
+     "judged_wrong": 26,
+     "named": 11,
+     "named_and_wrong": 10
+    },
+    "topk_null": {
+     "n": 7,
+     "judged_wrong": 4,
+     "named": 1,
+     "named_and_wrong": 0
+    },
+    "count_fanout": {
+     "n": 54,
+     "judged_wrong": 25,
+     "named": 35,
+     "named_and_wrong": 19
+    },
+    "empty_answer": {
+     "n": 8,
+     "judged_wrong": 7,
+     "named": 5,
+     "named_and_wrong": 4
+    }
+   },
+   "findings_total": 110,
+   "named_total": 52,
+   "live_queries": 105,
+   "live_judged_wrong": 59,
+   "agreement": {
+    "live": {
+     "wrong": 59,
+     "wrong_changed": 21,
+     "correct_or_none": 46,
+     "correct_changed": 16,
+     "lift": 1.02
+    },
+    "others": {
+     "wrong": 56,
+     "wrong_changed": 9,
+     "correct_or_none": 139,
+     "correct_changed": 20,
+     "lift": 1.12
+    }
+   },
+   "cost": {
+    "median_s": 63.1,
+    "mean_s": 81.5,
+    "p95_s": 181.3,
+    "max_s": 689.1,
+    "gpu_hours": 6.8,
+    "mean_tokens_in": 15210,
+    "mean_tokens_out": 978,
+    "median_steps": 4.0,
+    "mean_steps": 4.1,
+    "no_verdict": 2,
+    "hit_30_steps": 2,
+    "any_bad_format": 0
+   },
+   "q802": {
+    "correct": "no",
+    "analysis": "Correctness: No\nIs_ambiguous: Yes\nExplanation: The original query assumes there is a single tallest superhero, but the data shows a tie between Surtur and Ymir. The question does not specify how to handle ties, leading to ambiguity. Additionally, the query does not filter out NULL or zero values for height, which could lead to incorrect results.\nRevised: To handle ties, we can select all superhero"
+   },
+   "q1203": {
+    "correct": "no",
+    "analysis": "Correctness: No\nIs_ambiguous: No\nExplanation: The annotated query is not correct because it counts distinct patient IDs, but the result shows that there are duplicate patient IDs with WBC values below 3.5. The question asks for the total number of such patients, not distinct ones. The sample IDs fetched show that the same patient ID (30609) appears multiple times, indicating that these patients ha"
+   },
+   "name": "Qwen2.5-Coder-32B-Instruct",
+   "gpu": {
+    "model": "Qwen/Qwen2.5-Coder-32B-Instruct",
+    "tag": "qwen32b",
+    "ids": "results/sar_local/ids_dev2024_eval300.txt",
+    "version": "dev_2024",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "precision": "bf16",
+    "job": "295580",
+    "node": "itiger01",
+    "start": "2026-11-06 21:32:22 CST"
+   }
+  },
+  "gptoss120b": {
+   "n": 300,
+   "verdicts": {
+    "yes": 140,
+    "no": 160
+   },
+   "per_class": {
+    "topk_tie": {
+     "n": 41,
+     "judged_wrong": 23,
+     "named": 18,
+     "named_and_wrong": 11
+    },
+    "topk_null": {
+     "n": 7,
+     "judged_wrong": 4,
+     "named": 3,
+     "named_and_wrong": 2
+    },
+    "count_fanout": {
+     "n": 54,
+     "judged_wrong": 49,
+     "named": 46,
+     "named_and_wrong": 43
+    },
+    "empty_answer": {
+     "n": 8,
+     "judged_wrong": 5,
+     "named": 5,
+     "named_and_wrong": 3
+    }
+   },
+   "findings_total": 110,
+   "named_total": 72,
+   "live_queries": 105,
+   "live_judged_wrong": 79,
+   "agreement": {
+    "live": {
+     "wrong": 79,
+     "wrong_changed": 32,
+     "correct_or_none": 26,
+     "correct_changed": 5,
+     "lift": 2.11
+    },
+    "others": {
+     "wrong": 81,
+     "wrong_changed": 19,
+     "correct_or_none": 114,
+     "correct_changed": 10,
+     "lift": 2.67
+    }
+   },
+   "cost": {
+    "median_s": 15.9,
+    "mean_s": 18.7,
+    "p95_s": 40.9,
+    "max_s": 71.8,
+    "gpu_hours": 1.56,
+    "mean_tokens_in": 4446,
+    "mean_tokens_out": 943,
+    "median_steps": 1.0,
+    "mean_steps": 1.3,
+    "no_verdict": 0,
+    "hit_30_steps": 0,
+    "any_bad_format": 17
+   },
+   "q802": {
+    "correct": "no",
+    "analysis": "Correctness: No - The provided query does not exclude missing or zero heights and returns only a single row, which may miss ties for the tallest height.\nIs_ambiguous: Yes - The question can be interpreted as requiring all superheroes sharing the maximum height, and it is unclear whether heroes with NULL or 0 height should be considered.\nExplanation: The schema defines `height_cm` as an integer whe"
+   },
+   "q1203": {
+    "correct": "no",
+    "analysis": "**Analyze Result Format:**  \n```\nCorrectness: No - the query counts lab rows, not distinct patients, leading to overcounting.  \nIs_ambiguous: No - the question clearly asks for the number of female patients with any WBC measurement below 3.5.  \nExplanation: The original query `SELECT COUNT(T1.ID) ...` joins Patient and Laboratory and applies the filters, but each qualifying Laboratory record contr"
+   },
+   "name": "gpt-oss-120b",
+   "gpu": {
+    "model": "openai/gpt-oss-120b",
+    "tag": "gptoss120b",
+    "ids": "results/sar_local/ids_dev2024_eval300.txt",
+    "version": "dev_2024",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "precision": "bf16",
+    "job": "295564",
+    "node": "itiger01",
+    "start": "2026-11-06 19:40:11 CST"
+   }
+  }
+ },
+ "rerun": {
+  "qwen3b": {
+   "n": 50,
+   "same_verdict": 33,
+   "both_verdict": 49,
+   "kappa": 0.3
+  },
+  "qwen32b": {
+   "n": 50,
+   "same_verdict": 36,
+   "both_verdict": 48,
+   "kappa": 0.47
+  }
+ },
+ "dev2025": {
+  "qwen32b": {
+   "n": 65,
+   "verdicts": {
+    "yes": 27,
+    "no": 36,
+    "None": 2
+   },
+   "per_class": {
+    "topk_tie": {
+     "n": 21,
+     "judged_wrong": 11,
+     "named": 1
+    },
+    "topk_null": {
+     "n": 5,
+     "judged_wrong": 1,
+     "named": 2
+    },
+    "count_fanout": {
+     "n": 32,
+     "judged_wrong": 15,
+     "named": 22
+    },
+    "empty_answer": {
+     "n": 10,
+     "judged_wrong": 9,
+     "named": 7
+    }
+   }
+  }
+ },
+ "hint": {
+  "qwen32b": {
+   "plain": {
+    "per_class": {
+     "topk_tie": {
+      "n": 41,
+      "judged_wrong": 26,
+      "named_and_wrong": 10
+     },
+     "topk_null": {
+      "n": 7,
+      "judged_wrong": 4,
+      "named_and_wrong": 0
+     },
+     "count_fanout": {
+      "n": 54,
+      "judged_wrong": 25,
+      "named_and_wrong": 19
+     },
+     "empty_answer": {
+      "n": 8,
+      "judged_wrong": 7,
+      "named_and_wrong": 4
+     }
+    },
+    "named_total": 33,
+    "judged_wrong": 59,
+    "wrong_changed": 21,
+    "correct_or_none": 46,
+    "correct_changed": 16,
+    "ambiguous_yes": 32,
+    "mean_steps": 4.72
+   },
+   "hint": {
+    "per_class": {
+     "topk_tie": {
+      "n": 41,
+      "judged_wrong": 41,
+      "named_and_wrong": 27
+     },
+     "topk_null": {
+      "n": 7,
+      "judged_wrong": 7,
+      "named_and_wrong": 6
+     },
+     "count_fanout": {
+      "n": 54,
+      "judged_wrong": 50,
+      "named_and_wrong": 49
+     },
+     "empty_answer": {
+      "n": 8,
+      "judged_wrong": 7,
+      "named_and_wrong": 5
+     }
+    },
+    "named_total": 87,
+    "judged_wrong": 100,
+    "wrong_changed": 36,
+    "correct_or_none": 5,
+    "correct_changed": 1,
+    "ambiguous_yes": 76,
+    "mean_steps": 3.63
+   },
+   "n": 105
+  },
+  "gptoss120b": {
+   "plain": {
+    "per_class": {
+     "topk_tie": {
+      "n": 41,
+      "judged_wrong": 23,
+      "named_and_wrong": 11
+     },
+     "topk_null": {
+      "n": 7,
+      "judged_wrong": 4,
+      "named_and_wrong": 2
+     },
+     "count_fanout": {
+      "n": 54,
+      "judged_wrong": 49,
+      "named_and_wrong": 43
+     },
+     "empty_answer": {
+      "n": 8,
+      "judged_wrong": 5,
+      "named_and_wrong": 3
+     }
+    },
+    "named_total": 59,
+    "judged_wrong": 79,
+    "wrong_changed": 32,
+    "correct_or_none": 26,
+    "correct_changed": 5,
+    "ambiguous_yes": 54,
+    "mean_steps": 1.43
+   },
+   "hint": {
+    "per_class": {
+     "topk_tie": {
+      "n": 41,
+      "judged_wrong": 40,
+      "named_and_wrong": 37
+     },
+     "topk_null": {
+      "n": 7,
+      "judged_wrong": 7,
+      "named_and_wrong": 5
+     },
+     "count_fanout": {
+      "n": 54,
+      "judged_wrong": 47,
+      "named_and_wrong": 46
+     },
+     "empty_answer": {
+      "n": 8,
+      "judged_wrong": 6,
+      "named_and_wrong": 5
+     }
+    },
+    "named_total": 93,
+    "judged_wrong": 95,
+    "wrong_changed": 37,
+    "correct_or_none": 10,
+    "correct_changed": 0,
+    "ambiguous_yes": 51,
+    "mean_steps": 1.2
+   },
+   "n": 105
+  }
+ },
+ "other": {
+  "per_database_2025": {
+   "california_schools": [
+    89,
+    4
+   ],
+   "financial": [
+    106,
+    2
+   ],
+   "toxicology": [
+    145,
+    3
+   ],
+   "card_games": [
+    191,
+    6
+   ],
+   "codebase_community": [
+    186,
+    8
+   ],
+   "superhero": [
+    129,
+    2
+   ],
+   "formula_1": [
+    174,
+    9
+   ],
+   "european_football_2": [
+    129,
+    4
+   ],
+   "thrombosis_prediction": [
+    163,
+    18
+   ],
+   "student_club": [
+    158,
+    6
+   ],
+   "debit_card_specializing": [
+    64,
+    3
+   ]
+  },
+  "difficulty_2025": {
+   "challenging": [
+    231,
+    6
+   ],
+   "moderate": [
+    443,
+    28
+   ],
+   "simple": [
+    860,
+    31
+   ]
+  },
+  "tie_sizes_2025": [
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    2
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    3
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    4
+   ],
+   [
+    1,
+    5
+   ],
+   [
+    1,
+    6
+   ],
+   [
+    1,
+    9
+   ],
+   [
+    1,
+    13
+   ],
+   [
+    1,
+    16
+   ],
+   [
+    1,
+    36
+   ],
+   [
+    1,
+    49
+   ],
+   [
+    1,
+    561
+   ],
+   [
+    5,
+    6
+   ],
+   [
+    5,
+    8
+   ],
+   [
+    10,
+    11
+   ]
+  ],
+  "fanout_ratio_2025": [
+   298,
+   352,
+   371,
+   417,
+   701,
+   1148,
+   1167,
+   1218,
+   1279,
+   1490
+  ],
+  "fanout_ratio_above100": [
+   298,
+   701,
+   1148,
+   1218,
+   1279,
+   1490
+  ],
+  "per_class_changed_of_flagged": {
+   "mini_T0->mini_T1": {
+    "topk_tie": [
+     5,
+     13
+    ],
+    "topk_null": [
+     2,
+     3
+    ],
+    "count_fanout": [
+     12,
+     17
+    ],
+    "empty_answer": [
+     1,
+     1
+    ],
+    "topk_latent": [
+     2,
+     31
+    ]
+   },
+   "mini_T1->mini_T2": {
+    "topk_tie": [
+     6,
+     8
+    ],
+    "topk_null": [
+     0,
+     1
+    ],
+    "count_fanout": [
+     2,
+     5
+    ],
+    "empty_answer": [
+     0,
+     0
+    ],
+    "topk_latent": [
+     4,
+     32
+    ]
+   },
+   "dev_2024->dev_2025": {
+    "topk_tie": [
+     14,
+     41
+    ],
+    "topk_null": [
+     2,
+     7
+    ],
+    "count_fanout": [
+     23,
+     54
+    ],
+    "empty_answer": [
+     0,
+     8
+    ],
+    "topk_latent": [
+     12,
+     93
+    ]
+   }
+  },
+  "harmless_ties_2024": {
+   "n": 20,
+   "out_changed": 1
+  }
+ }
+}

@@ -1,0 +1,67 @@
+{
+ "n": 9428,
+ "databases": 69,
+ "live_queries": 780,
+ "live_pct": 8.27,
+ "flags": {
+  "topk_latent": 476,
+  "topk_tie": 260,
+  "empty_answer": 337,
+  "count_fanout": 183,
+  "topk_null": 16
+ },
+ "status": {
+  "ok": 8904,
+  "roundtrip_differs": 157,
+  "gold_fails": 367
+ },
+ "topk_queries": 1466,
+ "median_ms": 11.0,
+ "p95_s": 3.989,
+ "max_s": 266.624,
+ "cpu_s": 9854,
+ "wall_s": 950,
+ "databases_with_live": 67,
+ "top_databases": [
+  [
+   "movie_3",
+   325,
+   65
+  ],
+  [
+   "public_review_platform",
+   381,
+   46
+  ],
+  [
+   "talkingdata",
+   206,
+   40
+  ],
+  [
+   "retails",
+   245,
+   38
+  ],
+  [
+   "works_cycles",
+   474,
+   37
+  ],
+  [
+   "mondial_geo",
+   293,
+   33
+  ],
+  [
+   "restaurant",
+   117,
+   25
+  ],
+  [
+   "codebase_comments",
+   124,
+   20
+  ]
+ ]
+}

@@ -1,0 +1,23 @@
+{
+ "n": 498,
+ "pos": 88,
+ "auc_lodo": 0.633,
+ "ap_lodo": 0.32,
+ "base_rate": 0.177,
+ "features": [
+  "markers",
+  "qlen",
+  "elen",
+  "m_ev"
+ ],
+ "at_budget": {
+  "10%": {
+   "precision": 0.306,
+   "recall": 0.17
+  },
+  "20%": {
+   "precision": 0.293,
+   "recall": 0.33
+  }
+ }
+}

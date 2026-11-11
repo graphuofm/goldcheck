@@ -1,0 +1,83 @@
+{
+ "per_db": [
+  {
+   "db": "formula_1",
+   "n": 66,
+   "n_deep": 8,
+   "shallow_err": 32.8,
+   "deep_err": 37.5
+  },
+  {
+   "db": "superhero",
+   "n": 52,
+   "n_deep": 11,
+   "shallow_err": 12.2,
+   "deep_err": 72.7
+  },
+  {
+   "db": "card_games",
+   "n": 52,
+   "n_deep": 7,
+   "shallow_err": 11.1,
+   "deep_err": 14.3
+  },
+  {
+   "db": "european_football_2",
+   "n": 51,
+   "n_deep": 12,
+   "shallow_err": 12.8,
+   "deep_err": 33.3
+  },
+  {
+   "db": "thrombosis_prediction",
+   "n": 50,
+   "n_deep": 9,
+   "shallow_err": 36.6,
+   "deep_err": 77.8
+  },
+  {
+   "db": "codebase_community",
+   "n": 49,
+   "n_deep": 9,
+   "shallow_err": 17.5,
+   "deep_err": 33.3
+  },
+  {
+   "db": "student_club",
+   "n": 48,
+   "n_deep": 5,
+   "shallow_err": 20.9,
+   "deep_err": 60.0
+  },
+  {
+   "db": "toxicology",
+   "n": 40,
+   "n_deep": 14,
+   "shallow_err": 15.4,
+   "deep_err": 28.6
+  },
+  {
+   "db": "debit_card_specializing",
+   "n": 30,
+   "n_deep": 4,
+   "shallow_err": 11.5,
+   "deep_err": 25.0
+  },
+  {
+   "db": "california_schools",
+   "n": 30,
+   "n_deep": 4,
+   "shallow_err": 61.5,
+   "deep_err": 75.0
+  },
+  {
+   "db": "financial",
+   "n": 30,
+   "n_deep": 5,
+   "shallow_err": 32.0,
+   "deep_err": 20.0
+  }
+ ],
+ "dbs_with_gradient": 10,
+ "dbs_compared": 11
+}

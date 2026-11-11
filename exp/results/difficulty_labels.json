@@ -1,0 +1,85 @@
+{
+ "grid": {
+  "simple": [
+   133,
+   11,
+   4
+  ],
+  "moderate": [
+   205,
+   39,
+   4
+  ],
+  "challenging": [
+   72,
+   26,
+   4
+  ]
+ },
+ "per_label": {
+  "simple": [
+   42,
+   148
+  ],
+  "moderate": [
+   101,
+   248
+  ],
+  "challenging": [
+   58,
+   102
+  ]
+ },
+ "blind_cell": [
+  37,
+  58
+ ],
+ "challenging_flat": [
+  38,
+  72
+ ],
+ "within_label_gradient": {
+  "simple": [
+   [
+    36,
+    133
+   ],
+   [
+    3,
+    11
+   ],
+   [
+    3,
+    4
+   ]
+  ],
+  "moderate": [
+   [
+    70,
+    205
+   ],
+   [
+    27,
+    39
+   ],
+   [
+    4,
+    4
+   ]
+  ],
+  "challenging": [
+   [
+    38,
+    72
+   ],
+   [
+    16,
+    26
+   ],
+   [
+    4,
+    4
+   ]
+  ]
+ }
+}
